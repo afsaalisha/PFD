@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/PFD/public/css/styles.css">
     <link rel="stylesheet" href="/PFD/public/css/mobile.css" media="screen and (max-width: 768px)">
     <script src="/public/js/tabs.js"></script>
-    
+
 </head>
 <body>
   <header>

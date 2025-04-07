@@ -1,8 +1,6 @@
 <div class="sidebar">
-  <div class="sidebar-title">Pocket Pay Rest API</div>
-  <div class="sidebar-links">
-    <a href="#">WooCommerce</a>
-    <a href="#">WIX</a>
-    <a href="#">Shopify</a>
-  </div>
+  <div class="sidebar-section-title">Pocket Pay Rest API</div>
+  <div class="sidebar-link"><a href="#">WooCommerce</a></div>
+  <div class="sidebar-link"><a href="#">WIX</a></div>
+  <div class="sidebar-link"><a href="#">Shopify</a></div>
 </div>
