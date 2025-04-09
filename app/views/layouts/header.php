@@ -22,7 +22,7 @@
       <a href="#">Guidelines</a>
       <a href="#">Pocket Merchant</a>
       <a href="#">Pocket Partner</a>
-      <a href="#">Go to Merchant Portal</a>
+      <a href="http://localhost/poshet/home">Go to Merchant Portal</a>
     </nav>
   </header>
 </body>
