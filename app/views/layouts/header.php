@@ -14,8 +14,10 @@
 <body>
   <header>
   <div class="logo-section">
+  <a href="/PFD/home">
   <img class="logo-icon" src="/PFD/public/images/pocket.png" alt="Logo">
-  <div class="logo-text">Pocket For Developers</div>
+  </a>
+  <div class="logo-text"><a href="/PFD/home">Pocket For Developers</div>
 </div>
     <nav>
       <a href="#">Documentation</a>
