@@ -233,6 +233,43 @@
 
 /* woo section */
 
+.toc-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  border-left: 4px solid #f47b4c;
+}
+
+.tocs-box h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.tocs-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.tocs-list li {
+  margin-bottom: 10px;
+}
+
+.tocs-list a {
+  text-decoration: none;
+  color: #f47b4c;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.tocs-list a:hover {
+  color: #ff7a00;
+}
+
+
 .doc-content {
   flex: 1;
   padding: 20px 40px;

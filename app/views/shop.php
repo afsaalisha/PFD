@@ -7,9 +7,16 @@
     
     <!-- Main Content -->
     <main class="doc-content">
+    <div class="tocs-box">
+  <h3>Table of Contents</h3>
+  <ul class="tocs-list">
+    <li><a href="#integration">Integration with Shopify</a></li>
+    <li><a href="#managing">Managing Payments</a></li>
+  </ul>
+</div>
       <section>
-        <h2>Integration with Shopify</h2>
-        <hr />
+      <h2 id="integration">Integration with Shopify</h2>
+      <hr />
         <ol>
           <li><strong>Generate a Pocket Pay Payment Link:</strong>
             <ul>
@@ -42,8 +49,8 @@
       </section>
 
       <section>
-        <h2>Managing Payments</h2>
-        <hr />
+      <h2 id="managing">Managing Payments</h2>
+      <hr />
         <ol>
           <li><strong>Tracking Orders:</strong>
             <ul>

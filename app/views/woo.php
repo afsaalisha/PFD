@@ -7,8 +7,15 @@
     
     <!-- Main Content -->
     <main class="doc-content">
+    <div class="tocs-box">
+  <h3>Table of Contents</h3>
+  <ul class="tocs-list">
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+  </ul>
+</div>
       <section>
-        <h2>Installation</h2>
+        <h2 id="installation">Installation</h2>
         <hr />
         <ol>
           <li><strong>Download the Plugin:</strong>
@@ -32,7 +39,7 @@
       </section>
 
       <section>
-        <h2>Configuration</h2>
+        <h2 id="configuration">Configuration</h2>
         <hr />
         <ol>
           <li><strong>Setting up Merchant’s Pocket Account:</strong>
