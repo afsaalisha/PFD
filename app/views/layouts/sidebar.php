@@ -13,7 +13,7 @@ $current = $_SERVER['REQUEST_URI'];
     <a href="/PFD/wix">WIX</a>
   </div>
 
-  <div class="sidebar-link <?php echo ($current == '/PFD/shopify') ? 'active' : ''; ?>">
-    <a href="/PFD/shopify">Shopify</a>
+  <div class="sidebar-link <?php echo ($current == '/PFD/shop') ? 'active' : ''; ?>">
+    <a href="/PFD/shop">Shopify</a>
   </div>
 </div>

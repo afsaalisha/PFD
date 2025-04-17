@@ -15,3 +15,4 @@ class AssetController
         require_once __DIR__ . '/../views/result.php';
     }
 }
+
