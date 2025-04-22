@@ -355,7 +355,7 @@
 }
 
 .guide-collapsible {
-  background-color: #f2f2f2;
+  background-color: #ff7b0020;
   color: #333;
   cursor: pointer;
   padding: 14px 18px;
@@ -369,7 +369,7 @@
 }
 
 .guide-collapsible:hover {
-  background-color: #ddd;
+  background-color: #ff620030;
 }
 
 .guide-collapsible::after {
