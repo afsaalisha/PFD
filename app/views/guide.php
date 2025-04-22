@@ -8,13 +8,13 @@
         <!-- Main Content -->
         <main class="doc-content">
             <h1>Create Kiyoshi <span style="font-size: 14px; color: #999;">🔒 OAuth 2.0</span></h1>
-            <p>Creates a Kiyoshi belonging to provided ad account and returns Adachi metadata. Kiyoshi type can be either image, audio, or video.</p>
+            <p>Creates a Kiyoshi belonging to provided Kiyoshi owner and returns Adachi metadata. Kiyoshi type can be either image, audio, or video.</p>
 
             <div class="guide-collapsible-container">
                 <button class="guide-collapsible">Request</button>
                 <div class="guide-content">
                     <h3 style="color: green;">POST</h3>
-                    <code>/ad_accounts/{ad_account_id}/Kiyoshi</code>
+                    <code>/kiyoshi_owners/{kiyoshi_owner_id}/Kiyoshi</code>
                 </div>
             </div>
 
@@ -23,9 +23,9 @@
                 <div class="guide-content">
                     <ul>
                         <li>
-                            <strong>ad_account_id</strong> <code>string (uuid)</code>
+                            <strong>kiyoshi_owner_id</strong> <code>string (uuid)</code>
                             <span style="color: green;">Required</span><br />
-                            A unique identifier for an Ad Account.<br />
+                            A unique identifier for a Kiyoshi owner.<br />
                             <em>Example: ce4ff15e-f04d-48b9-9ddf-fb3c8f5bd57a</em>
                         </li>
                     </ul>
