@@ -1,4 +1,4 @@
-    /* header section */
+  /* header section */
 
     body {
         margin: 0;
@@ -99,7 +99,6 @@
   font-weight: 600;
 }
 
-
 /* end of sidebar section */
 
 /* home content section */
@@ -132,8 +131,6 @@
   max-width: 800px; /* Optional limit to avoid overflow on large screens */
   margin-bottom: 30px;
 }
-
-
 
 .content-section {
   margin-top: 30px;
@@ -228,7 +225,6 @@
   font-weight: bold;
 }
 
-
 /* end of home section  */
 
 /* woo section */
@@ -306,6 +302,7 @@
 }
 
 /* Main content + right panel wrapper */
+
 .main-and-right {
   display: flex;
   flex: 1;
@@ -349,6 +346,52 @@
   line-height: 1.4;
 }
 
-
-
 /* end of woo section  */
+
+/* start of guide section */
+
+.guide-collapsible-container {
+  margin-bottom: 1em;
+}
+
+.guide-collapsible {
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  padding: 14px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.guide-collapsible:hover {
+  background-color: #ddd;
+}
+
+.guide-collapsible::after {
+  content: '▼';
+  float: right;
+  transition: transform 0.3s;
+}
+
+.guide-collapsible.active::after {
+  transform: rotate(180deg);
+}
+
+.guide-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+  border-left: 2px solid #ccc;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+
+/* end of guide section */
