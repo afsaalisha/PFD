@@ -1,6 +1,8 @@
   /* header section */
 
-    body {
+      body {
+        height: 100%;
+        padding: 0;
         margin: 0;
         font-family: 'Segoe UI', sans-serif;
       }
@@ -56,15 +58,21 @@
 
 .sidebar {
   width: 230px;
-  background-color: #ffffff;
+  background-color: #fcfdff;
   padding: 32px 24px;
   border-right: 1px solid #e0e0e0;
-  min-height: 130vh;
+  min-height: 100%;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1000; */
 }
 
 .sidebar-section-title {
@@ -106,7 +114,7 @@
 .page-container {
   display: flex;
   align-items: flex-start;
-  background-color: #f9f9fb;
+  background-color: #f4f6fc;
   min-height: 100vh;
   position: relative;
 }
@@ -306,24 +314,33 @@
 .main-and-right {
   display: flex;
   flex: 1;
+  height: 100%;
 }
 
 .right-panel {
   flex: 0 0 280px;
-  background-color: #fafafa;
+  background-color: #db5b00;
   padding: 24px;
-  border-left: 1px solid #e0e0e0;
+  border-left: 1px solid #ff7f00;
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: center;
+  min-height: 100%;
+  /* position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1000; */
 }
 
 .right-box {
-  background-color: #fff;
+  background-color: #db5b00;
+  color: #fff;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
   text-align: center;
   width: 100%;
   max-width: 240px;
@@ -355,7 +372,7 @@
 }
 
 .guide-collapsible {
-  background-color: #ff7b0020;
+  background-color: #ff66002d;
   color: #333;
   cursor: pointer;
   padding: 14px 18px;
@@ -369,7 +386,7 @@
 }
 
 .guide-collapsible:hover {
-  background-color: #ff620030;
+  background-color: #ff550040;
 }
 
 .guide-collapsible::after {
