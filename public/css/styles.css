@@ -1,4 +1,14 @@
-  /* header section */
+      /* header section */
+
+      html {
+        scrollbar-width: none;            /* Firefox */
+        -ms-overflow-style: none;         /* IE 10+ */
+        overflow-y: scroll;               /* still scrollable */
+      }
+      
+      html::-webkit-scrollbar {
+        display: none;                    /* Chrome, Safari */
+      }
 
       body {
         height: 100%;
@@ -65,7 +75,7 @@
       nav a {
         color: white;
         text-decoration: none;
-        margin-right: 2.0rem;
+        margin-right: 3.5rem;
         font-weight: bold;
         transition: opacity 0.2s;
       }
@@ -354,19 +364,13 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
-  overflow-y: auto;
-  z-index: 1000;
-  scrollbar-width: thin; /* optional: makes the scrollbar smaller in Firefox */
+  overflow-y: scroll; /* Still scrolls */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
-/* Optional: style for WebKit scrollbars (Chrome, Edge, etc.) */
 .right-panel::-webkit-scrollbar {
-  width: 8px;
-}
-
-.right-panel::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  display: none; /* Chrome, Safari, Opera */
 }
 
 
