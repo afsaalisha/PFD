@@ -144,28 +144,33 @@
 
 .main-content {
   flex: 1;
-  padding: 40px 30px;
+  padding: 30px 30px;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .content-header h2 {
-  background: linear-gradient(to right, #fce7df, #fff6f4, #f9f9f9);
-  padding: 18px 32px;
+  /* background: linear-gradient(to right, #FF4800, #FF7F00, #F4F6FC); */
+  background: linear-gradient(to right, 
+  rgba(255, 72, 0, 0.7), 
+  rgba(255, 127, 0, 0.7), 
+  rgba(244, 246, 252, 0.7));
+  padding: 15px 32px;
   font-size: 28px;
   font-weight: 600;
   color: #222;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 32px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
   width: 80%; /* Adjusted to match screenshot */
   max-width: 800px; /* Optional limit to avoid overflow on large screens */
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .content-section {
   margin-top: 30px;
   width: 75%;
+  padding-left: 32px;
 }
 
 .content-section h3 {
