@@ -1,6 +1,9 @@
-<?php include 'layouts/header.php'; ?>
+<?php
+  $hasSidebar = false; // This must come BEFORE header.php
+  include 'layouts/header.php';
+?>
+
 <div class="page-container">
-  <?php include 'layouts/sidebar.php'; ?>
 
   <div class="main-content">
     <div class="content-header">

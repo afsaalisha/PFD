@@ -1,6 +1,7 @@
 <?php include 'layouts/header.php'; ?>
 <div class="page-container">
-    <?php include 'layouts/sidebar.php'; ?>
+<?php include 'layouts/guide-sidebar.php'; ?>
+
 
     <!-- Main + Right Panel Container -->
     <div class="main-and-right">

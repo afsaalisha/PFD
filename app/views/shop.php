@@ -1,3 +1,5 @@
+
+
 <?php include 'layouts/header.php'; ?>
 <div class="page-container">
   <?php include 'layouts/sidebar.php'; ?>
@@ -86,3 +88,5 @@
     
   </div>
 </div>
+
+<?php include 'layouts/footer.php'; ?>

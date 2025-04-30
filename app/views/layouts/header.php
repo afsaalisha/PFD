@@ -1,3 +1,11 @@
+<?php
+  // Set a default in case it's not defined in the page
+  if (!isset($hasSidebar)) {
+    $hasSidebar = true;
+  }
+  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +21,11 @@
 
 </head>
 
-<body>
+
+
+<body class="<?= $hasSidebar ? 'with-sidebar' : 'no-sidebar' ?>">
+
+
   <header>
     <div class="logo-section">
       <a href="/PFD/home">
@@ -22,7 +34,7 @@
       <div class="logo-text"><a href="/PFD/home">Pocket For Developers</div>
     </div>
     <nav>
-      <a href="#">Documentation</a>
+      <a href="/PFD/woo">Documentation</a>
       <a href="/PFD/guide">Guidelines</a>
       <a href="#">Pocket Merchant</a>
       <a href="#">Pocket Partner</a>

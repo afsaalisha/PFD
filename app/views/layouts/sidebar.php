@@ -16,4 +16,5 @@ $current = $_SERVER['REQUEST_URI'];
   <div class="sidebar-link <?php echo ($current == '/PFD/shop') ? 'active' : ''; ?>">
     <a href="/PFD/shop">Shopify</a>
   </div>
-</div>
+
+  </div>
