@@ -36,8 +36,8 @@
     <nav>
       <a href="/PFD/woo">Documentation</a>
       <a href="/PFD/guide">Guidelines</a>
-      <a href="#">Pocket Merchant</a>
-      <a href="#">Pocket Partner</a>
+      <a href="/PFD/merchant">Pocket Merchant</a>
+      <a href="/PFD/partner">Pocket Partner</a>
       <a href="http://localhost/poshet/home">Go to Merchant Portal</a>
     </nav>
   </header>
