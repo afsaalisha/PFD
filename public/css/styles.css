@@ -424,7 +424,7 @@
   color: #333;
   cursor: pointer;
   padding: 14px 18px;
-  width: 100%;
+  width: 870px;
   border: none;
   text-align: left;
   outline: none;
@@ -452,12 +452,91 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  background-color: #f9f9f9;
+  background-color: #f9faff;
   border-left: 2px solid #ccc;
   margin-top: 5px;
   border-radius: 4px;
 }
 
+.pldq-dropdown {
+  margin-bottom: 1rem;
+  border: 1px solid #ff7f00;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.pldq-header {
+  background-color: #ff7f00;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pldq-header:hover {
+  background-color: #e56f00;
+}
+
+.pldq-arrow {
+  transition: transform 0.3s;
+}
+
+.pldq-dropdown-content {
+  display: none;
+  background: #fff7f0;
+  padding: 1rem;
+  border-top: 1px solid #ff7f00;
+}
+
+.pldq-dropdown-content.open {
+  display: block;
+}
+
+.pldq-code-block {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.pldq-subtitle {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.pldq-ev {
+  font-size: 10px;
+}
+
+.pldq-button {
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 3px 8px;
+  border: none;
+}
+
+.pldq-button:hover {
+  border-radius: 15px;
+  background-color: #ff7f00;
+  color: white;
+  padding: 3px 8px;
+  border: none;
+}
+
+.respons-tings {
+  color: #555;
+  padding-bottom: -20px;
+  /* doesnt work but i wanna make it work */
+}
 
 /* end of guide section */
 
