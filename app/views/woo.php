@@ -159,6 +159,7 @@
         <img src="/PFD/public/images/yoshi.jpg" alt="Sample 1" class="right-img">
         <p>kiyoshi :3</p>
         <img src="/PFD/public/images/yocchi.jpg" alt="Sample 2" class="right-img">
+        <p>kiyoshi :3</p>
       </div>
     </aside>
 
