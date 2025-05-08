@@ -415,7 +415,7 @@
 
 /* start of guide section */
 
-.guide-collapsible-container {
+/* .guide-collapsible-container {
   margin-bottom: 1em;
 }
 
@@ -456,7 +456,7 @@
   border-left: 2px solid #ccc;
   margin-top: 5px;
   border-radius: 4px;
-}
+} */
 
 .pldq-dropdown {
   margin-bottom: 1rem;
@@ -464,6 +464,7 @@
   border-radius: 6px;
   overflow: hidden;
   font-family: sans-serif;
+  width: 875px;
 }
 
 .pldq-header {

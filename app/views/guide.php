@@ -6,94 +6,151 @@
     <!-- Main + Right Panel Container -->
     <div class="main-and-right">
 
-        <!-- Main Content -->
         <main class="doc-content">
             <h1>Payment Link & Dynamic QR</h1>
             <p>Generate payment link & dynamic qr for Pocket Pay gateway.</p>
 
-            <!-- <div class="guide-collapsible-container">
-                <button class="guide-collapsible">Post</button>
-                <div class="guide-content">
-                    <h3 style="color: #db5b00;">/payments/getNewOrderId</h3>
-                    <h5 style="color: grey">Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment.</h5>
-                    <code>/kiyoshi_owners/{kiyoshi_owner_id}/Kiyoshi</code>
-                </div>
-            </div> -->
-
+            <!-- /payments/getNewOrderId -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
                     <span>POST /payments/getNewOrderId</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>
-                        Generate <code>new_id</code> which will be used in the <code>order_id</code>
-                        parameter needed to create a payment.
-                    </p>
-
+                    <p>Put your arms around me baby</p>
                     <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
-                    <p class="respons-tings">Generate new Order ID</p>
-                    <pre class="pldq-code-block">
-<code>{
-"api_key": "your_api_key_here",
-"salt": "your_salt_here"
-}</code></pre>
-
+                    <p class="respons-tings">Example payload</p>
+                    <pre class="pldq-code-block"><code>{"lyrics": "Squeeze me oh so tight"}</code></pre>
                     <div class="pldq-subtitle">Response Example</div>
                     <p class="respons-tings">Curl</p>
-                    <pre class="pldq-code-block">
-<code>curl -X 'POST' \
-/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
--H 'accept: application/json' \
--H 'Content-Type: application/json' \
--H 'x-swaggerhub-cookie: ' \
--d '{
-"api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
-"salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
-}'</code></pre>
+                    <pre class="pldq-code-block"><code>curl -X POST /payments/getNewOrderId ...</code></pre>
                     <p class="respons-tings">Request URL</p>
-                    <pre class="pldq-code-block">
-<code>/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
-
+                    <pre class="pldq-code-block"><code>/payments/getNewOrderId</code></pre>
                     <p class="respons-tings">Server response</p>
-
                 </div>
             </div>
 
-            <div class="guide-collapsible-container">
-                <button class="guide-collapsible">Path Parameter</button>
-                <div class="guide-content">
-                    <ul>
-                        <li>
-                            <strong>kiyoshi_owner_id</strong> <code>string (uuid)</code>
-                            <span style="color: green;">Required</span><br />
-                            A unique identifier for a Kiyoshi owner.<br />
-                            <em>Example: ce4ff15e-f04d-48b9-9ddf-fb3c8f5bd57a</em>
-                        </li>
-                    </ul>
+            <!-- /payments/hash -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>POST /payments/hash</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Stroke my cock at a medium pace</p>
+                    <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
+                    <p class="respons-tings">Example payload</p>
+                    <pre class="pldq-code-block"><code>{"lyrics": "Play with my balls gently"}</code></pre>
+                    <div class="pldq-subtitle">Response Example</div>
+                    <p class="respons-tings">Curl</p>
+                    <pre class="pldq-code-block"><code>curl -X POST /payments/hash ...</code></pre>
+                    <p class="respons-tings">Request URL</p>
+                    <pre class="pldq-code-block"><code>/payments/hash</code></pre>
+                    <p class="respons-tings">Server response</p>
                 </div>
             </div>
 
-            <div class="guide-collapsible-container">
-                <button class="guide-collapsible">Body (application/json)</button>
-                <div class="guide-content">
-                    <ul>
-                        <li>
-                            <strong>kiyoshi_type</strong> <code>string</code>
-                            <span style="color: green;">Required</span><br />
-                            The type of Kiyoshi.<br />
-                            Allowed values: <code>AUDIO</code>, <code>IMAGE</code>, <code>VIDEO</code><br />
-                            <em>Example: "IMAGE"</em>
-                        </li>
-                        <li>
-                            <strong>kiyoshi_subtype</strong> <code>string</code><br />
-                            Only required for Kiyoshi type AUDIO.<br />
-                            Allowed values: <code>BACKGROUND_MUSIC</code>, <code>USER_UPLOADED_AUDIO</code>
-                        </li>
-                    </ul>
+            <!-- /payments/create -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>POST /payments/create</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Say my name</p>
+                    <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
+                    <p class="respons-tings">Example payload</p>
+                    <pre class="pldq-code-block"><code>{"lyrics": "It's your boyfriend"}</code></pre>
+                    <div class="pldq-subtitle">Response Example</div>
+                    <p class="respons-tings">Curl</p>
+                    <pre class="pldq-code-block"><code>curl -X POST /payments/create ...</code></pre>
+                    <p class="respons-tings">Request URL</p>
+                    <pre class="pldq-code-block"><code>/payments/create</code></pre>
+                    <p class="respons-tings">Server response</p>
                 </div>
             </div>
+
+            <!-- Utility Section -->
+            <h1>Utility</h1>
+            <p>Tools for querying and managing payments</p>
+
+            <!-- /payments/status -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>POST /payments/status</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Push it in and out at a medium pace</p>
+                    <div class="pldq-subtitle">Request Body (application/json)</div>
+                    <p class="respons-tings">Example payload</p>
+                    <pre class="pldq-code-block"><code>{"lyrics": "Talk dirty to me"}</code></pre>
+                </div>
+            </div>
+
+            <!-- /payments/voidV3 -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>POST /payments/voidV3</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Tell me you love me</p>
+                    <div class="pldq-subtitle">Request Body (application/json)</div>
+                    <p class="respons-tings">Example payload</p>
+                    <pre class="pldq-code-block"><code>{"lyrics": "Even if it's not true"}</code></pre>
+                </div>
+            </div>
+
+            <!-- Deprecated Section -->
+            <h1>Deprecated</h1>
+            <p>Old endpoints - avoid using in new implementations</p>
+
+            <!-- /payments/voidV2 -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>POST /payments/voidV2</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>I don't care just tell me lies</p>
+                    <div class="pldq-subtitle">Request Body (application/json)</div>
+                    <p class="respons-tings">Example payload</p>
+                    <pre class="pldq-code-block"><code>{"lyrics": "Touch my nipples"}</code></pre>
+                </div>
+            </div>
+
+            <!-- Schemas Section -->
+            <h1>Schemas</h1>
+            <p>Definitions for requests and responses</p>
+
+            <!-- 12 placeholder schema dropdowns -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>Schema 1</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Schema lyrics go here 🎶</p>
+                </div>
+            </div>
+            <!-- Repeat the above block 11 more times -->
+            <!-- Tip: use a loop in JS later if this is static content -->
+
+            <!-- Example for one more schema -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>Schema 2</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Suck on my toes baby</p>
+                </div>
+            </div>
+
+            <!-- Repeat until Schema 12 -->
         </main>
+
 
 
         <!-- Right Panel -->
@@ -107,14 +164,5 @@
 
     </div>
 </div>
-
-<script>
-    function togglePldqDropdown(header) {
-        const content = header.nextElementSibling;
-        const arrow = header.querySelector('.pldq-arrow');
-        content.classList.toggle('open');
-        arrow.style.transform = content.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
-    }
-</script>
 
 <?php include 'layouts/footer.php'; ?>
