@@ -13,7 +13,7 @@
             <!-- /payments/getNewOrderId -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>POST /payments/getNewOrderId</span>
+                    <span><button class="pldq-method">POST</button> /payments/getNewOrderId</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
@@ -33,7 +33,7 @@
             <!-- /payments/hash -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>POST /payments/hash</span>
+                    <span><button class="pldq-method">POST</button> /payments/hash</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
@@ -53,7 +53,7 @@
             <!-- /payments/create -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>POST /payments/create</span>
+                    <span><button class="pldq-method">POST</button> /payments/create</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
@@ -77,7 +77,7 @@
             <!-- /payments/status -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>POST /payments/status</span>
+                    <span><button class="pldq-method">POST</button> /payments/status</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
@@ -91,7 +91,7 @@
             <!-- /payments/voidV3 -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>POST /payments/voidV3</span>
+                    <span><button class="pldq-method">POST</button> /payments/voidV3</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
@@ -109,7 +109,7 @@
             <!-- /payments/voidV2 -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>POST /payments/voidV2</span>
+                    <span><button class="pldq-method">POST</button> /payments/voidV2</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
