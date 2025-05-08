@@ -42,6 +42,12 @@
             detail.open = expand;
         });
     }
+
+    // Tryout button
+    document.querySelector('.pldq-try').addEventListener('click', () => {
+        document.getElementById('rightContent').style.display = 'none';
+        document.getElementById('responseContent').style.display = 'block';
+    });
 </script>
 
 

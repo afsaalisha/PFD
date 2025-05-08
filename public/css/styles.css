@@ -537,6 +537,7 @@
   overflow-x: auto;
   font-family: monospace;
   font-size: 0.9rem;
+  white-space: pre-wrap;
 }
 
 .gron {
@@ -591,7 +592,11 @@
 .respons-tings {
   color: #555;
   padding-bottom: -20px;
-  /* doesnt work but i wanna make it work */
+}
+
+.rp-text {
+  color: #fcfdff;
+  
 }
 
 .pldq-tabs {

@@ -213,14 +213,29 @@
             <!-- Repeat until Schema 12 -->
         </main>
 
-
-
         <!-- Right Panel -->
         <aside class="right-panel">
-            <div class="right-box">
+            <div class="right-box" id="rightContent">
                 <img src="/PFD/public/images/yoshi.jpg" alt="Sample 1" class="right-img">
                 <p>kiyoshi :3</p>
                 <img src="/PFD/public/images/yocchi.jpg" alt="Sample 2" class="right-img">
+            </div>
+
+            <!-- Hidden response block -->
+            <div class="right-box" id="responseContent" style="display: none;">
+                <div class="pldq-subtitle">Response Example</div>
+                <p class="rp-text">Curl (planning to place this in the right panel after pressing "try out" button)</p>
+                <pre class="pldq-code-block"><code>curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+  -H <span class="gron">'accept: application/json'</span> \
+  -H <span class="gron">'Content-Type: application/json'</span> \
+  -H <span class="gron">'x-swaggerhub-cookie: '</span> \
+  -d <span class="gron">'{
+  "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+}'</span></code></pre>
+                <p class="rp-text">Request URL</p>
+                <pre class="pldq-code-block"><code>/payments/getNewOrderId</code></pre>
             </div>
         </aside>
 
