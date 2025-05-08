@@ -515,7 +515,7 @@
 .pldq-dropdown-content {
   max-height: 0;
   overflow: hidden;
-  background: #fff7f0;
+  background: rgb(255, 119, 0, 0.15);
   padding: 0 1rem; 
   border: 1px solid #ff7f00;
   border-radius: 10px;
@@ -642,6 +642,69 @@
 
 .arrow {
   float: right;
+}
+
+.schema-container {
+  background-color: #f6f8fa;
+  border-left: 4px solid #4a90e2;
+  padding: 1rem;
+  font-family: monospace;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.schema-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.schema-header strong {
+  font-size: 1.1rem;
+}
+
+.schema-header button {
+  background: #e0e0e0;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.schema-group details {
+  border-top: 1px solid #ccc;
+  padding: 0.5rem 0;
+}
+
+.schema-group summary {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.type-label {
+  color: #6a5acd;
+  font-size: 0.8rem;
+  margin-left: 0.4rem;
+}
+
+.required {
+  color: red;
+  margin-left: 0.3rem;
+}
+
+.example-section {
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.example-section ul {
+  margin: 0.3rem 0;
+  padding-left: 1.2rem;
 }
 
 

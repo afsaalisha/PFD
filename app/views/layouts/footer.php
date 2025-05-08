@@ -36,6 +36,12 @@
         const arrow = el.querySelector('.arrow');
         if (arrow) arrow.textContent = el.classList.contains('open') ? '▲' : '▼';
     }
+
+    function toggleAllSchemas(expand = true) {
+        document.querySelectorAll('.schema-group details').forEach(detail => {
+            detail.open = expand;
+        });
+    }
 </script>
 
 

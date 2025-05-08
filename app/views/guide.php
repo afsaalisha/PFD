@@ -36,28 +36,42 @@
                     </div>
 
                     <div class="pldq-tab-content" data-tab="schema" style="display: none;">
-                        <p class="respons-tings">Schema Description</p>
-                        <div class="schema-block">
-                            <div class="schema-object" onclick="toggleSchema(this)">
-                                <strong>NewOrderID</strong> <span class="arrow">▼</span>
-                                <div class="schema-content">
-                                    <div class="schema-field" onclick="toggleSchema(this)">
-                                        <span><strong>api_key</strong> <em>(string)</em> *</span>
-                                        <div class="schema-subcontent">
-                                            <strong>Example:</strong>
-                                            <pre>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</pre>
-                                        </div>
+                        <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                            <p class="respons-tings">Schema Description.</p>
+
+                            <div class="schema-container">
+                                <div class="schema-header">
+                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <div>
+                                        <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
                                     </div>
-                                    <div class="schema-field" onclick="toggleSchema(this)">
-                                        <span><strong>salt</strong> <em>(string)</em> *</span>
-                                        <div class="schema-subcontent">
-                                            <strong>Example:</strong>
-                                            <pre>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTDk..."</pre>
+                                </div>
+
+                                <div class="schema-group">
+                                    <details open>
+                                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                            </ul>
                                         </div>
-                                    </div>
+                                    </details>
+
+                                    <details open>
+                                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <button class="pldq-try">Try out</button>
