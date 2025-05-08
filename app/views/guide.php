@@ -17,13 +17,61 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Put your arms around me baby</p>
-                    <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
-                    <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"lyrics": "Squeeze me oh so tight"}</code></pre>
+                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <div class="pldq-subtitle">
+                        Request Body (application/json)
+                        <div class="pldq-tabs">
+                            <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                            <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="pldq-tab-content" data-tab="example">
+                        <p class="respons-tings">Generate new Order ID</p>
+                        <pre class="pldq-code-block"><code>{
+  "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+}</code></pre>
+                    </div>
+
+                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                        <p class="respons-tings">Schema Description</p>
+                        <div class="schema-block">
+                            <div class="schema-object" onclick="toggleSchema(this)">
+                                <strong>NewOrderID</strong> <span class="arrow">▼</span>
+                                <div class="schema-content">
+                                    <div class="schema-field" onclick="toggleSchema(this)">
+                                        <span><strong>api_key</strong> <em>(string)</em> *</span>
+                                        <div class="schema-subcontent">
+                                            <strong>Example:</strong>
+                                            <pre>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</pre>
+                                        </div>
+                                    </div>
+                                    <div class="schema-field" onclick="toggleSchema(this)">
+                                        <span><strong>salt</strong> <em>(string)</em> *</span>
+                                        <div class="schema-subcontent">
+                                            <strong>Example:</strong>
+                                            <pre>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTDk..."</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="pldq-try">Try out</button>
                     <div class="pldq-subtitle">Response Example</div>
-                    <p class="respons-tings">Curl</p>
-                    <pre class="pldq-code-block"><code>curl -X POST /payments/getNewOrderId ...</code></pre>
+                    <p class="respons-tings">Curl (planning to place this in the right panel after pressing "try out" button)</p>
+                    <pre class="pldq-code-block"><code>curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+  -H <span class="gron">'accept: application/json'</span> \
+  -H <span class="gron">'Content-Type: application/json'</span> \
+  -H <span class="gron">'x-swaggerhub-cookie: '</span> \
+  -d <span class="gron">'{
+  "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+}'</span></code></pre>
                     <p class="respons-tings">Request URL</p>
                     <pre class="pldq-code-block"><code>/payments/getNewOrderId</code></pre>
                     <p class="respons-tings">Server response</p>
