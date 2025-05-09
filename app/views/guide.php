@@ -129,10 +129,10 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Stroke my cock at a medium pace</p>
+                    <p>Beans</p>
                     <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
                     <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"lyrics": "Play with my balls gently"}</code></pre>
+                    <pre class="pldq-code-block"><code>{"bean": "Beans"}</code></pre>
                     <div class="pldq-subtitle">Response Example</div>
                     <p class="respons-tings">Curl</p>
                     <pre class="pldq-code-block"><code>curl -X POST /payments/hash ...</code></pre>
@@ -149,10 +149,10 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Say my name</p>
+                    <p>Beans</p>
                     <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
                     <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"lyrics": "It's your boyfriend"}</code></pre>
+                    <pre class="pldq-code-block"><code>{"bean": "Beans"}</code></pre>
                     <div class="pldq-subtitle">Response Example</div>
                     <p class="respons-tings">Curl</p>
                     <pre class="pldq-code-block"><code>curl -X POST /payments/create ...</code></pre>
@@ -173,10 +173,10 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Push it in and out at a medium pace</p>
+                    <p>Beans</p>
                     <div class="pldq-subtitle">Request Body (application/json)</div>
                     <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"lyrics": "Talk dirty to me"}</code></pre>
+                    <pre class="pldq-code-block"><code>{"beans": "Beans"}</code></pre>
                 </div>
             </div>
 
@@ -190,7 +190,7 @@
                     <p>Tell me you love me</p>
                     <div class="pldq-subtitle">Request Body (application/json)</div>
                     <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"lyrics": "Even if it's not true"}</code></pre>
+                    <pre class="pldq-code-block"><code>{"beans": "Beans"}</code></pre>
                 </div>
             </div>
 
@@ -205,10 +205,10 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>I don't care just tell me lies</p>
+                    <p>Beans</p>
                     <div class="pldq-subtitle">Request Body (application/json)</div>
                     <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"lyrics": "Touch my nipples"}</code></pre>
+                    <pre class="pldq-code-block"><code>{"beans": "Beans"}</code></pre>
                 </div>
             </div>
 
@@ -223,7 +223,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Schema lyrics go here 🎶</p>
+                    <p>Schema beans go here 🎶</p>
                 </div>
             </div>
             <!-- Repeat the above block 11 more times -->
@@ -236,7 +236,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Suck on my toes baby</p>
+                    <p>Beans</p>
                 </div>
             </div>
 
