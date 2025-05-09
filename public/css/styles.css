@@ -415,49 +415,6 @@
 
 /* start of guide section */
 
-/* .guide-collapsible-container {
-  margin-bottom: 1em;
-}
-
-.guide-collapsible {
-  background-color: #ff66002d;
-  color: #333;
-  cursor: pointer;
-  padding: 14px 18px;
-  width: 870px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-}
-
-.guide-collapsible:hover {
-  background-color: #ff550040;
-}
-
-.guide-collapsible::after {
-  content: '▼';
-  float: right;
-  transition: transform 0.3s;
-}
-
-.guide-collapsible.active::after {
-  transform: rotate(180deg);
-}
-
-.guide-content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #f9faff;
-  border-left: 2px solid #ccc;
-  margin-top: 5px;
-  border-radius: 4px;
-} */
-
 .pldq-dropdown {
   margin-bottom: 1rem;
   border: 1px solid #ff7f00;
@@ -548,6 +505,11 @@
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  background-color: #fcfdff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(217, 182, 161, 0.2);
+  color: #2d2d2d;
 }
 
 .pldq-ev {
@@ -594,9 +556,31 @@
   padding-bottom: -20px;
 }
 
-.rp-text {
+.rp-subtitle {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-radius: 10px;
   color: #fcfdff;
-  
+}
+
+.rp-text {
+  color: #fcfdff; 
+}
+
+.copy-btn {
+  border: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* font-size: 0.9rem; */
+  background-color: transparent;
+  color: #fcfdff;
+}
+
+.copy-btn:hover {
+ background-color: #fcfdff;
+ color: #db5b00;
 }
 
 .pldq-tabs {
@@ -712,6 +696,102 @@
   padding-left: 1.2rem;
 }
 
+.table-stuff {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-stuff th,
+.table-stuff td {
+  text-align: left !important;
+  padding: 8px 12px; /* Add spacing */
+}
+
+.table-stuff td.italic {
+  font-style: italic;
+}
+
+.rp-table-stuff {
+  border-collapse: collapse;
+  color: #fcfdff;
+  overflow: auto;
+}
+
+.rp-table-stuff th,
+.rp-table-stuff td {
+  text-align: left !important;
+  padding: 8px 12px; /* Add spacing */
+  vertical-align: top;
+}
+
+.rp-table-stuff td.italic {
+  font-style: italic;
+}
+
+.closeBtn {
+  align-self: flex-end;
+  border: none;
+  color: #fcfdff;
+  background-color: transparent;
+  font-size:large; 
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background-color: #fcfdff;
+  color: #db5b00;
+  border-radius: 15px;
+}
+
+.guide-right-panel {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 350px;
+  height: 87vh;
+  background-color: #db5b00;
+  padding: 24px;
+  border-left: 1px solid #ff7f00;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255, 255) transparent;
+  overflow-y: auto; /* show scrollbar when needed */
+}
+
+.guide-right-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.guide-right-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.right-panel,
+.guide-right-panel {
+  transition: opacity 0.2s ease;
+}
+
+.guide-right-panel pre {
+  overflow-x: auto;
+  white-space: pre; /* Keep it all in one line — no wrapping */
+  background-color: #222;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 49%;
+  box-sizing: border-box;
+}
+
+.guide-right-panel pre::-webkit-scrollbar {
+  height: 6px;
+}
+.guide-right-panel pre::-webkit-scrollbar-thumb {
+  background: #ffffffaa;
+  border-radius: 3px;
+}
 
 /* end of guide section */
 
