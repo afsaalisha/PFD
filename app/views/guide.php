@@ -129,16 +129,108 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                    <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
-                    <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"bean": "Beans"}</code></pre>
-                    <div class="pldq-subtitle">Response Example</div>
-                    <p class="respons-tings">Curl</p>
-                    <pre class="pldq-code-block"><code>curl -X POST /payments/hash ...</code></pre>
-                    <p class="respons-tings">Request URL</p>
-                    <pre class="pldq-code-block"><code>/payments/hash</code></pre>
-                    <p class="respons-tings">Server response</p>
+                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <div class="pldq-subtitle">
+                        Request Body (application/json)
+                        <div class="pldq-tabs">
+                            <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                            <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="pldq-tab-content" data-tab="example">
+                        <p class="respons-tings">Generate new Order ID</p>
+                        <pre class="pldq-code-block"><code>{
+  "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+}</code></pre>
+                    </div>
+
+                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                        <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                            <p class="respons-tings">Schema Description</p>
+
+                            <div class="schema-container">
+                                <div class="schema-header">
+                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <div>
+                                        <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                    </div>
+                                </div>
+
+                                <div class="schema-group">
+                                    <details open>
+                                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details open>
+                                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="pldq-try">Try out</button>
+
+                    <div class="pldq-subtitle">Responses</div>
+                    <table class="table-stuff">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Description</th>
+                                <th>Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200</td>
+                                <td>Success</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>210</td>
+                                <td>Failed to insert into database. Refer to the message for more info</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td>Correct API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>401</td>
+                                <td>No API key submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>412</td>
+                                <td>Invalid API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>428</td>
+                                <td>Insufficient information POSTed</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
 
@@ -149,16 +241,108 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                    <div class="pldq-subtitle">Request Body (application/json) <span class="pldq-ev">Example Value | </span><button class="pldq-ev pldq-button">Schema</button></div>
-                    <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"bean": "Beans"}</code></pre>
-                    <div class="pldq-subtitle">Response Example</div>
-                    <p class="respons-tings">Curl</p>
-                    <pre class="pldq-code-block"><code>curl -X POST /payments/create ...</code></pre>
-                    <p class="respons-tings">Request URL</p>
-                    <pre class="pldq-code-block"><code>/payments/create</code></pre>
-                    <p class="respons-tings">Server response</p>
+                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <div class="pldq-subtitle">
+                        Request Body (application/json)
+                        <div class="pldq-tabs">
+                            <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                            <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="pldq-tab-content" data-tab="example">
+                        <p class="respons-tings">Generate new Order ID</p>
+                        <pre class="pldq-code-block"><code>{
+  "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+}</code></pre>
+                    </div>
+
+                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                        <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                            <p class="respons-tings">Schema Description</p>
+
+                            <div class="schema-container">
+                                <div class="schema-header">
+                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <div>
+                                        <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                    </div>
+                                </div>
+
+                                <div class="schema-group">
+                                    <details open>
+                                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details open>
+                                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="pldq-try">Try out</button>
+
+                    <div class="pldq-subtitle">Responses</div>
+                    <table class="table-stuff">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Description</th>
+                                <th>Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200</td>
+                                <td>Success</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>210</td>
+                                <td>Failed to insert into database. Refer to the message for more info</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td>Correct API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>401</td>
+                                <td>No API key submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>412</td>
+                                <td>Invalid API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>428</td>
+                                <td>Insufficient information POSTed</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
 
@@ -173,10 +357,108 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                    <div class="pldq-subtitle">Request Body (application/json)</div>
-                    <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"beans": "Beans"}</code></pre>
+                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <div class="pldq-subtitle">
+                        Request Body (application/json)
+                        <div class="pldq-tabs">
+                            <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                            <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="pldq-tab-content" data-tab="example">
+                        <p class="respons-tings">Generate new Order ID</p>
+                        <pre class="pldq-code-block"><code>{
+  "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+}</code></pre>
+                    </div>
+
+                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                        <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                            <p class="respons-tings">Schema Description</p>
+
+                            <div class="schema-container">
+                                <div class="schema-header">
+                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <div>
+                                        <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                    </div>
+                                </div>
+
+                                <div class="schema-group">
+                                    <details open>
+                                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details open>
+                                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="pldq-try">Try out</button>
+
+                    <div class="pldq-subtitle">Responses</div>
+                    <table class="table-stuff">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Description</th>
+                                <th>Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200</td>
+                                <td>Success</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>210</td>
+                                <td>Failed to insert into database. Refer to the message for more info</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td>Correct API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>401</td>
+                                <td>No API key submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>412</td>
+                                <td>Invalid API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>428</td>
+                                <td>Insufficient information POSTed</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
 
@@ -187,10 +469,108 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Tell me you love me</p>
-                    <div class="pldq-subtitle">Request Body (application/json)</div>
-                    <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"beans": "Beans"}</code></pre>
+                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <div class="pldq-subtitle">
+                        Request Body (application/json)
+                        <div class="pldq-tabs">
+                            <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                            <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="pldq-tab-content" data-tab="example">
+                        <p class="respons-tings">Generate new Order ID</p>
+                        <pre class="pldq-code-block"><code>{
+  "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+}</code></pre>
+                    </div>
+
+                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                        <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                            <p class="respons-tings">Schema Description</p>
+
+                            <div class="schema-container">
+                                <div class="schema-header">
+                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <div>
+                                        <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                    </div>
+                                </div>
+
+                                <div class="schema-group">
+                                    <details open>
+                                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details open>
+                                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="pldq-try">Try out</button>
+
+                    <div class="pldq-subtitle">Responses</div>
+                    <table class="table-stuff">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Description</th>
+                                <th>Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200</td>
+                                <td>Success</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>210</td>
+                                <td>Failed to insert into database. Refer to the message for more info</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td>Correct API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>401</td>
+                                <td>No API key submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>412</td>
+                                <td>Invalid API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>428</td>
+                                <td>Insufficient information POSTed</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
 
@@ -205,34 +585,162 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                    <div class="pldq-subtitle">Request Body (application/json)</div>
-                    <p class="respons-tings">Example payload</p>
-                    <pre class="pldq-code-block"><code>{"beans": "Beans"}</code></pre>
+                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <div class="pldq-subtitle">
+                        Request Body (application/json)
+                        <div class="pldq-tabs">
+                            <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                            <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="pldq-tab-content" data-tab="example">
+                        <p class="respons-tings">Generate new Order ID</p>
+                        <pre class="pldq-code-block"><code>{
+  "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+}</code></pre>
+                    </div>
+
+                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                        <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                            <p class="respons-tings">Schema Description</p>
+
+                            <div class="schema-container">
+                                <div class="schema-header">
+                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <div>
+                                        <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                    </div>
+                                </div>
+
+                                <div class="schema-group">
+                                    <details open>
+                                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details open>
+                                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="pldq-try">Try out</button>
+
+                    <div class="pldq-subtitle">Responses</div>
+                    <table class="table-stuff">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Description</th>
+                                <th>Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200</td>
+                                <td>Success</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>210</td>
+                                <td>Failed to insert into database. Refer to the message for more info</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td>Correct API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>401</td>
+                                <td>No API key submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>412</td>
+                                <td>Invalid API key</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>428</td>
+                                <td>Insufficient information POSTed</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
 
             <!-- Schemas Section -->
             <h1>Schemas</h1>
-            <p>Definitions for requests and responses</p>
 
             <!-- 12 placeholder schema dropdowns -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>Schema 1</span>
+                    <span>NewOrderID</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
-                <div class="pldq-dropdown-content">
-                    <p>Schema beans go here 🎶</p>
+                <div class="s-dropdown-content">
+                    <div class="s-dropdown">
+                        <div class="s-header" onclick="togglePldqDropdown(this)">
+                            <span>api_key</span>
+                            <span class="pldq-arrow">▼</span>
+                        </div>
+                        <div class="s-dropdown-content">
+                            <div class="s-dropdown">
+                                <div class="s-header" onclick="togglePldqDropdown(this)">
+                                    <span>Examples</span>
+                                    <span class="pldq-arrow">▼</span>
+                                </div>
+                                <div class="s-dropdown-content">
+                                    <p class="gym">#0="XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-dropdown">
+                        <div class="s-header" onclick="togglePldqDropdown(this)">
+                            <span>Salt</span>
+                            <span class="pldq-arrow">▼</span>
+                        </div>
+                        <div class="s-dropdown-content">
+                            <div class="s-dropdown">
+                                <div class="s-header" onclick="togglePldqDropdown(this)">
+                                    <span>Examples</span>
+                                    <span class="pldq-arrow">▼</span>
+                                </div>
+                                <div class="s-dropdown-content">
+                                    <pp class="gym">#0="FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</pp>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Repeat the above block 11 more times -->
-            <!-- Tip: use a loop in JS later if this is static content -->
 
-            <!-- Example for one more schema -->
             <div class="pldq-dropdown">
                 <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>Schema 2</span>
+                    <span>NewOrderIDResponse</span>
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
@@ -240,7 +748,106 @@
                 </div>
             </div>
 
-            <!-- Repeat until Schema 12 -->
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>HashedData</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>HashedDataResponse</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>Create</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>CreateResponse</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>Status</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>StatusResponse</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>VoidV2</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>VoidV2Response</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>VoidV3</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
+            <div class="pldq-dropdown">
+                <div class="pldq-header" onclick="togglePldqDropdown(this)">
+                    <span>VoidV3Response</span>
+                    <span class="pldq-arrow">▼</span>
+                </div>
+                <div class="pldq-dropdown-content">
+                    <p>Beans</p>
+                </div>
+            </div>
+
         </main>
 
         <!-- Default Right Panel -->
