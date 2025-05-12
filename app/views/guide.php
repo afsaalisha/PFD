@@ -694,183 +694,62 @@
             <h1>Schemas</h1>
 
             <!-- 12 placeholder schema dropdowns -->
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>NewOrderID</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="s-dropdown-content">
-                    <div class="s-dropdown">
-                        <div class="s-header" onclick="togglePldqDropdown(this)">
-                            <span>api_key</span>
-                            <span class="pldq-arrow">▼</span>
-                        </div>
-                        <div class="s-dropdown-content">
-                            <div class="s-dropdown">
-                                <div class="s-header" onclick="togglePldqDropdown(this)">
-                                    <span>Examples</span>
-                                    <span class="pldq-arrow">▼</span>
-                                </div>
-                                <div class="s-dropdown-content">
-                                    <p class="gym">#0="XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="s-dropdown">
-                        <div class="s-header" onclick="togglePldqDropdown(this)">
-                            <span>Salt</span>
-                            <span class="pldq-arrow">▼</span>
-                        </div>
-                        <div class="s-dropdown-content">
-                            <div class="s-dropdown">
-                                <div class="s-header" onclick="togglePldqDropdown(this)">
-                                    <span>Examples</span>
-                                    <span class="pldq-arrow">▼</span>
-                                </div>
-                                <div class="s-dropdown-content">
-                                    <pp class="gym">#0="FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</pp>
-                                </div>
-                            </div>
-                        </div>
+            <div class="schema-container">
+                <div class="schema-header">
+                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                    <div>
+                        <button onclick="toggleAllSchemas(true)">Expand all</button>
+                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
                     </div>
                 </div>
-            </div>
 
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>NewOrderIDResponse</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
+                <div class="schema-group">
+                    <details open>
+                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                        <div class="example-section">
+                            <span>Examples:</span>
+                            <ul>
+                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                            </ul>
+                        </div>
+                    </details>
 
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>HashedData</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
-
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>HashedDataResponse</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
+                    <details open>
+                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                        <div class="example-section">
+                            <span>Examples:</span>
+                            <ul>
+                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                            </ul>
+                        </div>
+                    </details>
                 </div>
             </div>
+    </div>
 
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>Create</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
+    </main>
 
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>CreateResponse</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
+    <!-- Default Right Panel -->
+    <aside class="right-panel" id="defaultRightPanel">
+        <div class="right-box" id="rightContent">
+            <img src="/PFD/public/images/yoshi.jpg" alt="Sample 1" class="right-img">
+            <p>kiyoshi :3</p>
+            <img src="/PFD/public/images/yocchi.jpg" alt="Sample 2" class="right-img">
+        </div>
+    </aside>
 
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>Status</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
-
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>StatusResponse</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
-
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>VoidV2</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
-
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>VoidV2Response</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
-
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>VoidV3</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
-
-            <div class="pldq-dropdown">
-                <div class="pldq-header" onclick="togglePldqDropdown(this)">
-                    <span>VoidV3Response</span>
-                    <span class="pldq-arrow">▼</span>
-                </div>
-                <div class="pldq-dropdown-content">
-                    <p>Beans</p>
-                </div>
-            </div>
-
-        </main>
-
-        <!-- Default Right Panel -->
-        <aside class="right-panel" id="defaultRightPanel">
-            <div class="right-box" id="rightContent">
-                <img src="/PFD/public/images/yoshi.jpg" alt="Sample 1" class="right-img">
-                <p>kiyoshi :3</p>
-                <img src="/PFD/public/images/yocchi.jpg" alt="Sample 2" class="right-img">
-            </div>
-        </aside>
-
-        <!-- Guide Right Panel -->
-        <aside class="guide-right-panel" id="guideRightPanel" style="display: none;">
-            <button id="closeGuidePanel" class="closeBtn">✖</button>
-            <div class="guide-right-box">
-                <div class="rp-subtitle">Response Example</div>
-                <p class="rp-text">
-                    Curl
-                    <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
-                        <i class="fa fa-clipboard" aria-hidden="true"></i>
-                    </button>
-                </p>
-                <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+    <!-- Guide Right Panel -->
+    <aside class="guide-right-panel" id="guideRightPanel" style="display: none;">
+        <button id="closeGuidePanel" class="closeBtn">✖</button>
+        <div class="guide-right-box">
+            <div class="rp-subtitle">Response Example</div>
+            <p class="rp-text">
+                Curl
+                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
   /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
@@ -880,39 +759,39 @@
   "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
 }'</span></code></pre>
 
-                <p class="rp-text">
-                    Request URL
-                    <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
-                        <i class="fa fa-clipboard" aria-hidden="true"></i>
-                    </button>
-                </p>
-                <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+            <p class="rp-text">
+                Request URL
+                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
 
-                <table class="rp-table-stuff">
-                    <thead>
-                        <tr>
-                            <th>Code</th>
-                            <th>Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>200</td>
-                            <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
-                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                </button>
-                                <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
+            <table class="rp-table-stuff">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
   "new_id": <span class="gron">"17346779538593713"</span>
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                            <td>Response header
-                                <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
-                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                </button>
-                                <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Response header
+                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
  content-encoding: gzip 
  content-type: application/json; charset=UTF-8 
  date: Fri,09 May 2025 04:17:00 GMT 
@@ -924,15 +803,15 @@
  server: nginx 
  status: 200 OK 
  x-powered-by: PHP/7.3.21</code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </aside>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </aside>
 
 
-    </div>
+</div>
 </div>
 
 <?php include 'layouts/footer.php'; ?>
