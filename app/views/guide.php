@@ -673,7 +673,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <p>Voiding is only available for payments made on the same day- Deprecated on May 2025. Highly recommended to use Ipayments/voidV3 instead.</p>
                     <div class="pldq-subtitle">
                         Request Body (application/json)
                         <div class="pldq-tabs">
@@ -684,10 +684,13 @@
 
                     <!-- Tab content -->
                     <div class="pldq-tab-content" data-tab="example">
-                        <p class="respons-tings">Generate new Order ID</p>
+                        <p class="respons-tings">Void transaction</p>
                         <pre class="pldq-code-block"><code>{
   "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
-  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>,
+  "order_ref": <span class="red">10422</span>,
+  "admin_name": <span class="gron">"Pocket Admin"</span>,
+  "reason": <span class="gron">"Voiding for test."</span>
 }</code></pre>
                     </div>
 
@@ -748,13 +751,38 @@
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
-                                <td>210</td>
-                                <td>Failed to insert into database. Refer to the message for more info</td>
+                                <td>201</td>
+                                <td>Already voided</td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
-                                <td>300</td>
-                                <td>Correct API key</td>
+                                <td>202</td>
+                                <td>Unable to void</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>203</td>
+                                <td>Order not found in Pocket's DB</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>204</td>
+                                <td>Unable to save void log</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>205</td>
+                                <td>Order not found in SPP's DB</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>211</td>
+                                <td>Please pass order ref</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>212</td>
+                                <td>Invalid API key and salt</td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
