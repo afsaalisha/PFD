@@ -74,7 +74,7 @@
 
                     </div>
 
-                    <button class="pldq-try">Try out</button>
+                    <button class="pldq-try" data-target="guideRightPanel1">Try out</button>
 
                     <div class="pldq-subtitle">Responses</div>
                     <table class="table-stuff">
@@ -252,7 +252,7 @@
 
                     </div>
 
-                    <button class="pldq-try">Try out</button>
+                    <button class="pldq-try" data-target="guideRightPanel2">Try out</button>
 
                     <div class="pldq-subtitle">Responses</div>
                     <table class="table-stuff">
@@ -439,7 +439,7 @@
 
                     </div>
 
-                    <button class="pldq-try">Try out</button>
+                    <button class="pldq-try" data-target="guideRightPanel3">Try out</button>
 
                     <div class="pldq-subtitle">Responses</div>
                     <table class="table-stuff">
@@ -658,7 +658,7 @@
 
                     </div>
 
-                    <button class="pldq-try">Try out</button>
+                    <button class="pldq-try" data-target="guideRightPanel4">Try out</button>
 
                     <div class="pldq-subtitle">Responses</div>
                     <table class="table-stuff">
@@ -826,7 +826,7 @@
 
                     </div>
 
-                    <button class="pldq-try">Try out</button>
+                    <button class="pldq-try" data-target="guideRightPanel5">Try out</button>
 
                     <div class="pldq-subtitle">Responses</div>
                     <table class="table-stuff">
@@ -1009,7 +1009,7 @@
 
                     </div>
 
-                    <button class="pldq-try">Try out</button>
+                    <button class="pldq-try" data-target="guideRightPanel6">Try out</button>
 
                     <div class="pldq-subtitle">Responses</div>
                     <table class="table-stuff">
@@ -1137,9 +1137,9 @@
                 </div>
             </div>
 
-</div>
+    </div>
 
-</main>
+    </main>
 
     <!-- Default Right Panel -->
     <aside class="right-panel" id="defaultRightPanel">
@@ -1151,7 +1151,367 @@
     </aside>
 
     <!-- Guide Right Panel -->
-    <aside class="guide-right-panel" id="guideRightPanel" style="display: none;">
+    <aside class="guide-right-panel" id="guideRightPanel1" style="display: none;">
+        <button id="closeGuidePanel" class="closeBtn">✖</button>
+        <div class="guide-right-box">
+            <div class="rp-subtitle">Response Example</div>
+            <p class="rp-text">
+                Curl
+                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+  -H <span class="gron">'accept: application/json'</span> \
+  -H <span class="gron">'Content-Type: application/json'</span> \
+  -H <span class="gron">'x-swaggerhub-cookie: '</span> \
+  -d <span class="gron">'{
+  "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+}'</span></code></pre>
+
+            <p class="rp-text">
+                Request URL
+                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+
+            <table class="rp-table-stuff">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
+  "new_id": <span class="gron">"17346779538593713"</span>
+}</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Response header
+                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+ content-encoding: gzip 
+ content-type: application/json; charset=UTF-8 
+ date: Fri,09 May 2025 04:17:00 GMT 
+ etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ expires: -1 
+ pragma: no-cache 
+ ratelimit: "10000-in-1min"; r=9999; t=60 
+ ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
+ server: nginx 
+ status: 200 OK 
+ x-powered-by: PHP/7.3.21</code></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </aside>
+
+    <!-- Guide Right Panel -->
+    <aside class="guide-right-panel" id="guideRightPanel2" style="display: none;">
+        <button id="closeGuidePanel" class="closeBtn">✖</button>
+        <div class="guide-right-box">
+            <div class="rp-subtitle">Response Example</div>
+            <p class="rp-text">
+                Curl
+                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+  -H <span class="gron">'accept: application/json'</span> \
+  -H <span class="gron">'Content-Type: application/json'</span> \
+  -H <span class="gron">'x-swaggerhub-cookie: '</span> \
+  -d <span class="gron">'{
+  "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+}'</span></code></pre>
+
+            <p class="rp-text">
+                Request URL
+                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+
+            <table class="rp-table-stuff">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
+  "new_id": <span class="gron">"17346779538593713"</span>
+}</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Response header
+                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+ content-encoding: gzip 
+ content-type: application/json; charset=UTF-8 
+ date: Fri,09 May 2025 04:17:00 GMT 
+ etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ expires: -1 
+ pragma: no-cache 
+ ratelimit: "10000-in-1min"; r=9999; t=60 
+ ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
+ server: nginx 
+ status: 200 OK 
+ x-powered-by: PHP/7.3.21</code></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </aside>
+
+    <!-- Guide Right Panel -->
+    <aside class="guide-right-panel" id="guideRightPanel3" style="display: none;">
+        <button id="closeGuidePanel" class="closeBtn">✖</button>
+        <div class="guide-right-box">
+            <div class="rp-subtitle">Response Example</div>
+            <p class="rp-text">
+                Curl
+                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+  -H <span class="gron">'accept: application/json'</span> \
+  -H <span class="gron">'Content-Type: application/json'</span> \
+  -H <span class="gron">'x-swaggerhub-cookie: '</span> \
+  -d <span class="gron">'{
+  "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+}'</span></code></pre>
+
+            <p class="rp-text">
+                Request URL
+                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+
+            <table class="rp-table-stuff">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
+  "new_id": <span class="gron">"17346779538593713"</span>
+}</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Response header
+                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+ content-encoding: gzip 
+ content-type: application/json; charset=UTF-8 
+ date: Fri,09 May 2025 04:17:00 GMT 
+ etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ expires: -1 
+ pragma: no-cache 
+ ratelimit: "10000-in-1min"; r=9999; t=60 
+ ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
+ server: nginx 
+ status: 200 OK 
+ x-powered-by: PHP/7.3.21</code></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </aside>
+
+    <!-- Guide Right Panel -->
+    <aside class="guide-right-panel" id="guideRightPanel4" style="display: none;">
+        <button id="closeGuidePanel" class="closeBtn">✖</button>
+        <div class="guide-right-box">
+            <div class="rp-subtitle">Response Example</div>
+            <p class="rp-text">
+                Curl
+                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+  -H <span class="gron">'accept: application/json'</span> \
+  -H <span class="gron">'Content-Type: application/json'</span> \
+  -H <span class="gron">'x-swaggerhub-cookie: '</span> \
+  -d <span class="gron">'{
+  "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+}'</span></code></pre>
+
+            <p class="rp-text">
+                Request URL
+                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+
+            <table class="rp-table-stuff">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
+  "new_id": <span class="gron">"17346779538593713"</span>
+}</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Response header
+                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+ content-encoding: gzip 
+ content-type: application/json; charset=UTF-8 
+ date: Fri,09 May 2025 04:17:00 GMT 
+ etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ expires: -1 
+ pragma: no-cache 
+ ratelimit: "10000-in-1min"; r=9999; t=60 
+ ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
+ server: nginx 
+ status: 200 OK 
+ x-powered-by: PHP/7.3.21</code></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </aside>
+
+    <!-- Guide Right Panel -->
+    <aside class="guide-right-panel" id="guideRightPanel5" style="display: none;">
+        <button id="closeGuidePanel" class="closeBtn">✖</button>
+        <div class="guide-right-box">
+            <div class="rp-subtitle">Response Example</div>
+            <p class="rp-text">
+                Curl
+                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+  -H <span class="gron">'accept: application/json'</span> \
+  -H <span class="gron">'Content-Type: application/json'</span> \
+  -H <span class="gron">'x-swaggerhub-cookie: '</span> \
+  -d <span class="gron">'{
+  "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+}'</span></code></pre>
+
+            <p class="rp-text">
+                Request URL
+                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </p>
+            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+
+            <table class="rp-table-stuff">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
+  "new_id": <span class="gron">"17346779538593713"</span>
+}</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Response header
+                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+ content-encoding: gzip 
+ content-type: application/json; charset=UTF-8 
+ date: Fri,09 May 2025 04:17:00 GMT 
+ etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ expires: -1 
+ pragma: no-cache 
+ ratelimit: "10000-in-1min"; r=9999; t=60 
+ ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
+ server: nginx 
+ status: 200 OK 
+ x-powered-by: PHP/7.3.21</code></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </aside>
+
+    <!-- Guide Right Panel -->
+    <aside class="guide-right-panel" id="guideRightPanel6" style="display: none;">
         <button id="closeGuidePanel" class="closeBtn">✖</button>
         <div class="guide-right-box">
             <div class="rp-subtitle">Response Example</div>
