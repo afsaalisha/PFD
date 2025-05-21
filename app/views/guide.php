@@ -88,7 +88,62 @@
                         <tbody>
                             <tr>
                                 <td>200</td>
-                                <td>Success</td>
+                                <td>
+                                    Success
+                                    <br><br>
+                                    <div>
+                                        <strong>Media type</strong><br>
+                                        <div class="pldq-media-box">application/json</div>
+                                        <p>Controls <span class="red">Accept</span> header.</p>
+                                    </div>
+
+                                    <div class="pldq-tabs">
+                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="example">
+                                        <p class="respons-tings">Generate new Order ID</p>
+                                        <pre class="pldq-code-block"><code>{
+  "new_id": <span class="red">1234567898</span>
+}</code></pre>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                                        <p class="respons-tings">Schema Description</p>
+                                        <div class="schema-container">
+                                            <div class="schema-header">
+                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <div>
+                                                    <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                                    <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="schema-group">
+                                                <details open>
+                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
+                                                <details open>
+                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>

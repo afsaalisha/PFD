@@ -31,6 +31,7 @@
         });
     }
 
+
     function toggleSchema(el) {
         el.classList.toggle('open');
         const arrow = el.querySelector('.arrow');
