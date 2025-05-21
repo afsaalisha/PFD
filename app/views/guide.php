@@ -17,7 +17,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment.</p>
                     <div class="pldq-subtitle">
                         Request Body (application/json)
                         <div class="pldq-tabs">
@@ -129,7 +129,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <p>Generate the SHA256 hash data needed for creating the payment link & dynamic qr. Make sure to generate the new order ID before generating hash data.</p>
                     <div class="pldq-subtitle">
                         Request Body (application/json)
                         <div class="pldq-tabs">
@@ -140,10 +140,22 @@
 
                     <!-- Tab content -->
                     <div class="pldq-tab-content" data-tab="example">
-                        <p class="respons-tings">Generate new Order ID</p>
+                        <p class="respons-tings">Generate hash data.</p>
                         <pre class="pldq-code-block"><code>{
   "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
-  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>,
+  "subamount_1": <span class="red">100</span>,
+  "subamount_1_label": <span class="gron">"Order Total"</span>,
+  "subamount_2": <span class="red">0</span>,
+  "subamount_3": <span class="red">0</span>,
+  "subamount_4": <span class="red">0</span>,
+  "subamount_5": <span class="red">0</span>,
+  "order_id": <span class="red">10422</span>,
+  "order_info": <span class="gron">"This is the order info 10422."</span>,
+  "order_desc": <span class="gron">"Description"</span>,
+  "return_url": <span class="gron">"https://www.threegmedia.com/"</span>,
+  "callback_url": <span class="gron">"http://pocket-api.threeg.asia/callbase"</span>,
+  "discount": <span class="red">0</span>
 }</code></pre>
                     </div>
 
@@ -241,7 +253,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <p>Generate the payment URL & dynamic QR to be shown to the user in order to collect payment. Make sure to generate the hash data before generating the payment link & dynamic qr.</p>
                     <div class="pldq-subtitle">
                         Request Body (application/json)
                         <div class="pldq-tabs">
@@ -250,12 +262,33 @@
                         </div>
                     </div>
 
+                    <!-- <span class="gron"></span> <span class="red"></span> -->
+
                     <!-- Tab content -->
                     <div class="pldq-tab-content" data-tab="example">
                         <p class="respons-tings">Generate new Order ID</p>
                         <pre class="pldq-code-block"><code>{
   "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
-  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>,
+  "hashed_data": <span class="gron">"9f3e806346622936152aedd5e95a7db0978f623b8efddda356a0c291ec747e20"</span>,
+  "subamount_1": <span class="red">100</span>,
+  "subamount_2": <span class="red">0</span>,
+  "subamount_3": <span class="red">0</span>,
+  "subamount_4": <span class="red">0</span>,
+  "subamount_5": <span class="red">0</span>,
+  "subamount_1_label": <span class="gron">"Order Total"</span>,
+  "subamount_2_label": <span class="gron">"string"</span>,
+  "subamount_3_label": <span class="gron">"string"</span>,
+  "subamount_4_label": <span class="gron">"string"</span>,
+  "subamount_5_label": <span class="gron">"string"</span>,
+  "order_id": <span class="red">10422</span>,
+  "order_info": <span class="gron">"This is the order info 10422."</span>,
+  "order_desc": <span class="gron">"Description"</span>,
+  "return_url": <span class="gron">"https://www.threegmedia.com/"</span>,
+  "callback_url": <span class="gron">"http://pocket-api.threeg.asia/callbase"</span>,
+  "discount": <span class="red">0</span>,
+  "promo": <span class="gron">"string"</span>,
+  "promo_code": <span class="gron">"string"</span>
 }</code></pre>
                     </div>
 
@@ -321,13 +354,58 @@
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
-                                <td>300</td>
-                                <td>Correct API key</td>
+                                <td>211</td>
+                                <td>Total chargeable is zero</td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
-                                <td>401</td>
-                                <td>No API key submitted</td>
+                                <td>212</td>
+                                <td>No Order ID submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>213</td>
+                                <td>No Order Info submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>214</td>
+                                <td>No Subamount 1 Label submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>215</td>
+                                <td>Invalid Return URL submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>216</td>
+                                <td>Incorrect Hashed Data submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>217</td>
+                                <td>No Subamount 1 submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>218</td>
+                                <td>No Discount submitted</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>219</td>
+                                <td>Duplicate Order ID detected</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>220</td>
+                                <td>Unable to create new transactions</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>221</td>
+                                <td>Unable to get QR</td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
@@ -357,7 +435,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <p>Query the latest status of a transaction.</p>
                     <div class="pldq-subtitle">
                         Request Body (application/json)
                         <div class="pldq-tabs">
@@ -368,10 +446,11 @@
 
                     <!-- Tab content -->
                     <div class="pldq-tab-content" data-tab="example">
-                        <p class="respons-tings">Generate new Order ID</p>
+                        <p class="respons-tings">Query transaction status</p>
                         <pre class="pldq-code-block"><code>{
   "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
-  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>,
+  "order_id": <span class="red">"10422"</span>
 }</code></pre>
                     </div>
 
@@ -432,13 +511,8 @@
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
-                                <td>210</td>
-                                <td>Failed to insert into database. Refer to the message for more info</td>
-                                <td class="italic">No links</td>
-                            </tr>
-                            <tr>
-                                <td>300</td>
-                                <td>Correct API key</td>
+                                <td>211</td>
+                                <td>Order not found</td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
@@ -469,7 +543,7 @@
                     <span class="pldq-arrow">▼</span>
                 </div>
                 <div class="pldq-dropdown-content">
-                    <p>Generate ‘new_id’ which will be used in the ‘order_id' parameter needed to create a payment</p>
+                    <p>Voiding is only available for payments made on the same day- Take in either one of cref or order_ref (depending on which reference is provided)</p>
                     <div class="pldq-subtitle">
                         Request Body (application/json)
                         <div class="pldq-tabs">
@@ -480,10 +554,14 @@
 
                     <!-- Tab content -->
                     <div class="pldq-tab-content" data-tab="example">
-                        <p class="respons-tings">Generate new Order ID</p>
+                        <p class="respons-tings">Void transaction. Include either cref OR order ref.</p>
                         <pre class="pldq-code-block"><code>{
   "api_key": <span class="gron">"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</span>,
-  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>
+  "salt": <span class="gron">"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</span>,
+  "cerf": <span class="gron">"C000000000000"</span>,
+  "order_ref": <span class="gron">"64757"</span>,
+  "admin_name": <span class="gron">"Pocket Admin"</span>,
+  "reason": <span class="gron">"Voiding for test."</span>
 }</code></pre>
                     </div>
 
@@ -544,23 +622,33 @@
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
-                                <td>210</td>
-                                <td>Failed to insert into database. Refer to the message for more info</td>
-                                <td class="italic">No links</td>
-                            </tr>
-                            <tr>
-                                <td>300</td>
-                                <td>Correct API key</td>
-                                <td class="italic">No links</td>
-                            </tr>
-                            <tr>
                                 <td>401</td>
                                 <td>No API key submitted</td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
+                                <td>402</td>
+                                <td>Unable to void order</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>411</td>
+                                <td>Voiding period has expired. Refer to the message for more info.</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
                                 <td>412</td>
-                                <td>Invalid API key</td>
+                                <td>Invalid API key and salt</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>413</td>
+                                <td>Transaction not found in the database. Refer to the message for more info.</td>
+                                <td class="italic">No links</td>
+                            </tr>
+                            <tr>
+                                <td>414</td>
+                                <td>Order not found in the database</td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>

@@ -482,7 +482,7 @@
 }
 
 .pldq-dropdown-content.open {
-  max-height: 1000px; 
+  max-height: 2000px; 
   padding: 1rem; 
 }
 
@@ -499,6 +499,10 @@
 
 .gron {
   color:rgb(61, 255, 148);
+}
+
+.red {
+  color:rgb(255, 61, 80);
 }
 
 .pldq-subtitle {
