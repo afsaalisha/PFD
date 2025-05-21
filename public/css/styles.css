@@ -634,13 +634,13 @@
   border-top: 1px solid #eee;
 }
 
-.pldq-tab-content {
+/* .pldq-tab-content {
   display: none;
 }
 
 .pldq-tab-content.active {
   display: block;
-}
+} */
 
 
 /* Schema section */
