@@ -690,44 +690,9 @@
                 </div>
             </div>
 
-            <!-- Schemas Section -->
-            <h1>Schemas</h1>
+</div>
 
-            <!-- 12 placeholder schema dropdowns -->
-            <div class="schema-container">
-                <div class="schema-header">
-                    <strong>NewOrderID</strong> <span class="type-label">object</span>
-                    <div>
-                        <button onclick="toggleAllSchemas(true)">Expand all</button>
-                        <button onclick="toggleAllSchemas(false)">Collapse all</button>
-                    </div>
-                </div>
-
-                <div class="schema-group">
-                    <details open>
-                        <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
-                        <div class="example-section">
-                            <span>Examples:</span>
-                            <ul>
-                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details open>
-                        <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
-                        <div class="example-section">
-                            <span>Examples:</span>
-                            <ul>
-                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
-                            </ul>
-                        </div>
-                    </details>
-                </div>
-            </div>
-    </div>
-
-    </main>
+</main>
 
     <!-- Default Right Panel -->
     <aside class="right-panel" id="defaultRightPanel">
@@ -812,6 +777,7 @@
 
 
 </div>
-</div>
+
+
 
 <?php include 'layouts/footer.php'; ?>
