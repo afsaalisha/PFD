@@ -854,12 +854,12 @@
 
 .s-dropdown-content.open {
   max-height: 800px; 
-  padding: 10px;
-  padding-bottom: 0px !important; 
+  padding: 1rem; 
 }
 
 .gym {
-  padding: 0px !important;
+  padding: 0% !important;
+  margin: auto;
 }
 
 /* end of guide section */
