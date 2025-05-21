@@ -587,6 +587,14 @@
  color: #db5b00;
 }
 
+.pldq-media-box {
+  padding: 5px 10px;
+  background-color: #fcfdff;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 17.5%;
+}
+
 /* Tabs Section */
 
 .pldq-tabs {
