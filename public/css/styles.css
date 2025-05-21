@@ -1004,88 +1004,119 @@
 
 /* schema section */
 
+
+/* Schema container */
 .schemama-container {
-    border: 1px solid #f4f6fc;
-    border-radius: 12px;
-    padding: 1rem;
-    background-color: #ffffff;
+    max-width: 900px;
 }
 
-/* Header with title and buttons */
-.schemama-header h1 {
-    font-size: 1.6rem;
-    margin: 0;
+/* Header wrapper */
+.schemama-header {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+    transition: background-color 0.2s ease;
+    text-align: left;
 }
-
+.schemama-header:hover {
+    background-color: #e5e7eb;
+}
 
 .schemama-header strong {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f2937;
+    text-align: left;
 }
 
+/* Type label (aligned right) */
 .typemama-label {
-    font-size: 0.9rem;
-    background-color: #3b82f6;
+    font-size: 0.75rem;
+    background-color: #6366f1; /* Indigo for top-level */
     color: white;
-    padding: 2px 6px;
-    border-radius: 6px;
-    margin-left: 0.5rem;
-}
-
-/* Expand/collapse buttons */
-.schemama-header button {
-    background-color: #1f2b5b;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    margin-left: 0.5rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
-
-.schemama-header button:hover {
-    background-color: #162046;
-}
-
-/* Schema group container */
-.schemama-group details {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 0.8rem;
-    padding: 0.6rem 1rem;
-    background-color: white;
-}
-
-/* Summary header inside schema group */
-.schemama-group summary {
-    cursor: pointer;
+    padding: 2px 10px;
+    border-radius: 9999px;
     font-weight: bold;
+    margin-left: auto;
+    white-space: nowrap;
+}
+/* Section blocks */
+.schemama-group details {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1.2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.schemama-group details[open] {
+    background-color: #fff;
+}
+
+/* Top-level summary */
+.schemama-group summary {
+    font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 
-/* Example section */
-.examplemama-section {
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-    color: #333;
+
+.schemama-group summary::-webkit-details-marker {
+    display: none;
 }
+
+/* Sub-property box */
+.examplemama-section {
+    background-color: #fff;
+    margin-top: 0.8rem;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e5e7eb;
+}
+
 
 .examplemama-section span {
-    font-weight: bold;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 .examplemama-section ul {
-    margin: 0.3rem 0 0 1.2rem;
-    padding: 0;
+    margin-left: 1.2rem;
 }
 
+/* Sub-property item */
 .examplemama-section li {
-    list-style-type: disc;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
+/* Sub-property type label (different color) */
+.examplemama-section .typemama-label {
+    background-color: #6366f1;
+    opacity: 0.85;
+}
 
-/* end of partner section  */
+/* Required asterisk */
+.required {
+    color: red;
+    margin-left: 8px;
+}
+/* end of schema section  */
