@@ -634,15 +634,6 @@
   border-top: 1px solid #eee;
 }
 
-/* .pldq-tab-content {
-  display: none;
-}
-
-.pldq-tab-content.active {
-  display: block;
-} */
-
-
 /* Schema section */
 
 .schema-block {
@@ -738,13 +729,13 @@
 
 .table-stuff {
   border-collapse: collapse;
-  width: 100% !important;
+  width: 100%;
 }
 
 .table-stuff th,
 .table-stuff td {
   text-align: left !important;
-  padding: 8px 12px !important;
+  padding: 8px 12px;
 }
 
 .table-stuff td.italic {
@@ -760,7 +751,7 @@
 .rp-table-stuff th,
 .rp-table-stuff td {
   text-align: left !important;
-  padding: 8px 12px !important;
+  padding: 8px 12px;
   vertical-align: top;
 }
 
