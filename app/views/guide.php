@@ -103,7 +103,6 @@
                                     </div>
 
                                     <div class="pldq-tab-content" data-tab="example">
-                                        <p class="respons-tings">Generate new Order ID</p>
                                         <pre class="pldq-code-block"><code>{
   "new_id": <span class="red">1234567898</span>
 }</code></pre>
@@ -267,7 +266,61 @@
                         <tbody>
                             <tr>
                                 <td>200</td>
-                                <td>Success</td>
+                                <td>
+                                    Success
+                                    <br><br>
+                                    <div>
+                                        <strong>Media type</strong><br>
+                                        <div class="pldq-media-box">application/json</div>
+                                        <p>Controls <span class="red">Accept</span> header.</p>
+                                    </div>
+
+                                    <div class="pldq-tabs">
+                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="example">
+                                        <pre class="pldq-code-block"><code>{
+"hashed_data": <span class="gron">"9f3e806346622936152aedd5e95a7db0978f623b8efddda356a0c291ec747e20"</span>
+}</code></pre>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                                        <p class="respons-tings">Schema Description</p>
+                                        <div class="schema-container">
+                                            <div class="schema-header">
+                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <div>
+                                                    <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                                    <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="schema-group">
+                                                <details open>
+                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
+                                                <details open>
+                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
@@ -400,7 +453,64 @@
                         <tbody>
                             <tr>
                                 <td>200</td>
-                                <td>Success</td>
+                                <td>
+                                    Success
+                                    <br><br>
+                                    <div>
+                                        <strong>Media type</strong><br>
+                                        <div class="pldq-media-box">application/json</div>
+                                        <p>Controls <span class="red">Accept</span> header.</p>
+                                    </div>
+
+                                    <div class="pldq-tabs">
+                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="example">
+                                        <pre class="pldq-code-block"><code>{
+  "payment_url": <span class="gron">"https://pocket-pay.threeg.asia/?tx_id=9086714 900001640a8c9581d72"</span>,
+  "success_indicator": <span class="gron">"7Mt2HFzywguxK0S6jDET"</span>,
+  "order_ref": <span class="gron">"64757"</span>,
+  "qr": <span class="gron">"4XVUkHFdhideMCPENze61e8oV3D8QG3zlnEwdlYkt4+6Hfl9gPzaj6TwoQlFp8DVV0gzKbncHcclHUVNwCj7GUAMijIP/ICG2j8lkAzDjeXWLIXv+ESLSl662s4dyHvxk2RZuXCkk32P8YFSdm3sorbg2W2eVvXQhyJv6GGJgkjHDy6+k1WGauhPL 2boL+S5EMloW4HJ4Lqw/lm8OGq63A=="</span>
+}</code></pre>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                                        <p class="respons-tings">Schema Description</p>
+                                        <div class="schema-container">
+                                            <div class="schema-header">
+                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <div>
+                                                    <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                                    <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="schema-group">
+                                                <details open>
+                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
+                                                <details open>
+                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
@@ -562,7 +672,64 @@
                         <tbody>
                             <tr>
                                 <td>200</td>
-                                <td>Success</td>
+                                <td>
+                                    Success
+                                    <br><br>
+                                    <div>
+                                        <strong>Media type</strong><br>
+                                        <div class="pldq-media-box">application/json</div>
+                                        <p>Controls <span class="red">Accept</span> header.</p>
+                                    </div>
+
+                                    <div class="pldq-tabs">
+                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="example">
+                                        <pre class="pldq-code-block"><code>{
+  "method": <span class="gron">"Pocket QR"</span>,
+  "status_id": <span class="gron">"Not Paid"</span>,
+  "final_amount": <span class="gron">"1.00"</span>,
+  "order_ref": <span class="gron">"64757"</span>
+}</code></pre>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                                        <p class="respons-tings">Schema Description</p>
+                                        <div class="schema-container">
+                                            <div class="schema-header">
+                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <div>
+                                                    <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                                    <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="schema-group">
+                                                <details open>
+                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
+                                                <details open>
+                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
@@ -673,7 +840,61 @@
                         <tbody>
                             <tr>
                                 <td>200</td>
-                                <td>Success</td>
+                                <td>
+                                    Success
+                                    <br><br>
+                                    <div>
+                                        <strong>Media type</strong><br>
+                                        <div class="pldq-media-box">application/json</div>
+                                        <p>Controls <span class="red">Accept</span> header.</p>
+                                    </div>
+
+                                    <div class="pldq-tabs">
+                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="example">
+                                        <pre class="pldq-code-block"><code>{
+  "message": <span class="gron">"Order marked as voided."</span>
+}</code></pre>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                                        <p class="respons-tings">Schema Description</p>
+                                        <div class="schema-container">
+                                            <div class="schema-header">
+                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <div>
+                                                    <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                                    <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="schema-group">
+                                                <details open>
+                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
+                                                <details open>
+                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
@@ -802,7 +1023,62 @@
                         <tbody>
                             <tr>
                                 <td>200</td>
-                                <td>Success</td>
+                                <td>
+                                    Success
+                                    <br><br>
+                                    <div>
+                                        <strong>Media type</strong><br>
+                                        <div class="pldq-media-box">application/json</div>
+                                        <p>Controls <span class="red">Accept</span> header.</p>
+                                    </div>
+
+                                    <div class="pldq-tabs">
+                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
+                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="example">
+                                        <pre class="pldq-code-block"><code>{
+  "message": <span class="gron">"Order successfully marked as voided."</span>,
+  "cref": <span class="gron">"123456"</span>
+}</code></pre>
+                                    </div>
+
+                                    <div class="pldq-tab-content" data-tab="schema" style="display: none;">
+                                        <p class="respons-tings">Schema Description</p>
+                                        <div class="schema-container">
+                                            <div class="schema-header">
+                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <div>
+                                                    <button onclick="toggleAllSchemas(true)">Expand all</button>
+                                                    <button onclick="toggleAllSchemas(false)">Collapse all</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="schema-group">
+                                                <details open>
+                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
+                                                <details open>
+                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span>
+                                                        <ul>
+                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="italic">No links</td>
                             </tr>
                             <tr>
