@@ -738,13 +738,13 @@
 
 .table-stuff {
   border-collapse: collapse;
-  width: 100%;
+  width: 100% !important;
 }
 
 .table-stuff th,
 .table-stuff td {
   text-align: left !important;
-  padding: 8px 12px; /* Add spacing */
+  padding: 8px 12px !important;
 }
 
 .table-stuff td.italic {
@@ -760,8 +760,32 @@
 .rp-table-stuff th,
 .rp-table-stuff td {
   text-align: left !important;
-  padding: 8px 12px; /* Add spacing */
+  padding: 8px 12px !important;
   vertical-align: top;
+}
+
+.rp-code-block {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  width: 46% !important;
+}
+
+.rp-td-code-block {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  width: 40% !important;
 }
 
 .rp-table-stuff td.italic {
@@ -796,12 +820,15 @@
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
-  scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255, 255) transparent;
-  overflow-y: auto; /* show scrollbar when needed */
+  overflow-y: auto;
+
+  /* Hide scrollbar in WebKit (Chrome, Safari, Edge) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
 }
 
 .guide-right-panel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
   width: 6px;
 }
 
@@ -811,7 +838,7 @@
 
 .right-panel,
 .guide-right-panel {
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease-in ease-out;
 }
 
 .guide-right-panel pre {
