@@ -43,12 +43,6 @@
         });
     }
 
-    // Tryout button
-    // document.querySelector('.pldq-try').addEventListener('click', () => {
-    //     document.getElementById('rightContent').style.display = 'none';
-    //     document.getElementById('responseContent').style.display = 'block';
-    // });
-
     // Smoothly switch to the guide panel when Try Out is clicked
     document.querySelector('.pldq-try').addEventListener('click', () => {
         const defaultPanel = document.getElementById("defaultRightPanel");
