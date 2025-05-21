@@ -753,3 +753,49 @@
 </div>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll(".schemama-header");
+
+    // Toggle top-level headers
+    headers.forEach(header => {
+        header.addEventListener("click", function () {
+            const currentGroup = header.nextElementSibling;
+
+            // Close all groups except the clicked one
+            document.querySelectorAll(".schemama-group").forEach(group => {
+                if (group !== currentGroup) {
+                    group.style.display = "none";
+                }
+            });
+
+            // Toggle current group
+            currentGroup.style.display = (currentGroup.style.display === "block") ? "none" : "block";
+        });
+    });
+
+    // Ensure only one <details> is open at a time per group
+    document.querySelectorAll(".schemama-group").forEach(group => {
+        const details = group.querySelectorAll("details");
+
+        details.forEach(detail => {
+            detail.addEventListener("toggle", function () {
+                if (detail.open) {
+                    // Close all others in this group
+                    details.forEach(d => {
+                        if (d !== detail) {
+                            d.removeAttribute("open");
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    // Optional: Start all closed
+    document.querySelectorAll(".schemama-group").forEach(group => {
+        group.style.display = "none";
+    });
+});
+</script>
