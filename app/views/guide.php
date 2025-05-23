@@ -1553,11 +1553,11 @@
             <div class="rp-subtitle">Response Example</div>
             <p class="rp-text">
                 Curl
-                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                <button class="copy-btn" data-copy-target="#curlCode1">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+            <pre class="pldq-code-block"><code id="curlCode1">curl -X <span class="gron">'POST'</span> \
   /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
@@ -1569,11 +1569,11 @@
 
             <p class="rp-text">
                 Request URL
-                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                <button class="copy-btn" data-copy-target="#requestUrlCode1">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+            <pre class="pldq-code-block"><code id="requestUrlCode1">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1585,10 +1585,10 @@
                 <tbody>
                     <tr>
                         <td>200</td>
-                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                        <td>Response body <button class="copy-btn" data-copy-target="requestResponseBodyCode1">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
+                            <pre class="pldq-code-block"><code id="requestResponseBodyCode1">{
   "new_id": <span class="gron">"17346779538593713"</span>
 }</code></pre>
                         </td>
@@ -1596,10 +1596,10 @@
                     <tr>
                         <td> </td>
                         <td>Response header
-                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                            <button class="copy-btn" data-copy-target="#requestResponseHeaderCode1">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode1"> cache-control: no-cache 
  content-encoding: gzip 
  content-type: application/json; charset=UTF-8 
  date: Fri,09 May 2025 04:17:00 GMT 
@@ -1625,11 +1625,11 @@
             <div class="rp-subtitle">Response Example</div>
             <p class="rp-text">
                 Curl
-                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                <button class="copy-btn" data-copy-target="#curlCode2">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+            <pre class="rp-code-block"><code id="curlCode2">curl -X <span class="gron">'POST'</span> \
   /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fhash \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
@@ -1653,11 +1653,11 @@
 
             <p class="rp-text">
                 Request URL
-                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                <button class="copy-btn" data-copy-target="#requestUrlCode2">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fhash</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode2">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fhash</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1669,10 +1669,10 @@
                 <tbody>
                     <tr>
                         <td>200</td>
-                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                        <td>Response body <button class="copy-btn" data-copy-target="#requestResponseBodyCode2">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">{
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode2">{
   "hashed_data": <span class="gron">"5275876304dba644b111c19d44ed0da81ca797aaf1371abf2e0b45126f8a4993"</span>
 }</code></pre>
                         </td>
@@ -1680,10 +1680,10 @@
                     <tr>
                         <td> </td>
                         <td>Response header
-                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                            <button class="copy-btn" data-copy-target="#requestResponseHeaderCode2">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode2"> cache-control: no-cache 
  content-encoding: gzip 
  content-type: application/json; charset=UTF-8 
  date: Wed,21 May 2025 07:07:11 GMT 
@@ -1709,11 +1709,11 @@
             <div class="rp-subtitle">Response Example</div>
             <p class="rp-text">
                 Curl
-                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                <button class="copy-btn" data-copy-target="#curlCode3">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+            <pre class="rp-code-block"><code id="curlCode3">curl -X <span class="gron">'POST'</span> \
   /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fcreate \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
@@ -1744,11 +1744,11 @@
 
             <p class="rp-text">
                 Request URL
-                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                <button class="copy-btn" data-copy-target="#requestUrlCode3">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fcreate</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode3">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fcreate</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1760,10 +1760,10 @@
                 <tbody>
                     <tr>
                         <td>216</td>
-                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                        <td>Response body <button class="copy-btn" data-copy-target="#requestResponseBodyCode3">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">{
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode3">{
   "message": <span class="gron">"Incorrect Hashed Data submitted."</span>
 }</code></pre>
                         </td>
@@ -1771,10 +1771,10 @@
                     <tr>
                         <td></td>
                         <td>Response header
-                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                            <button class="copy-btn" data-copy-target="#requestResponseHeaderCode3">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode3"> cache-control: no-cache 
  content-length: 46 
  content-type: application/json; charset=UTF-8 
  date: Wed,21 May 2025 07:32:07 GMT 
@@ -1800,11 +1800,11 @@
             <div class="rp-subtitle">Response Example</div>
             <p class="rp-text">
                 Curl
-                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                <button class="copy-btn" data-copy-target="#curlCode4">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+            <pre class="rp-code-block"><code id="curlCode4">curl -X <span class="gron">'POST'</span> \
   /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fstatus \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
@@ -1817,11 +1817,11 @@
 
             <p class="rp-text">
                 Request URL
-                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                <button class="copy-btn" data-copy-target="#requestUrlCode4">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fstatus</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode4">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fstatus</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1833,10 +1833,10 @@
                 <tbody>
                     <tr>
                         <td>200</td>
-                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                        <td>Response body <button class="copy-btn" data-copy-target="#requestResponseBodyCode4">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">{
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode4">{
   "method": <span class="gron">"Pocket QR"</span>,
   "status_id": <span class="red">0</span>,
   "final_amount": <span class="gron">"1.00"</span>
@@ -1846,10 +1846,10 @@
                     <tr>
                         <td> </td>
                         <td>Response header
-                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                            <button class="copy-btn" data-copy-target="#requestResponseHeaderCode4">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode4"> cache-control: no-cache 
  content-encoding: gzip 
  content-type: application/json; charset=UTF-8 
  date: Wed,21 May 2025 07:45:55 GMT 
@@ -1875,11 +1875,11 @@
             <div class="rp-subtitle">Response Example</div>
             <p class="rp-text">
                 Curl
-                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                <button class="copy-btn" data-copy-target="#curlCode5">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+            <pre class="rp-code-block"><code id="curlCode5">curl -X <span class="gron">'POST'</span> \
   /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV3 \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
@@ -1895,11 +1895,11 @@
 
             <p class="rp-text">
                 Request URL
-                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                <button class="copy-btn" data-copy-target="#requestUrlCode5">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV3</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode5">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV3</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1911,10 +1911,10 @@
                 <tbody>
                     <tr>
                         <td>200</td>
-                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
+                        <td>Response body <button class="copy-btn" data-copy-target="#requestResponseBodyCode5">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">Action 'voidV3' was not found on handler 'payments'<br>#0 [internal function]: Phalcon\Mvc\Dispatcher-&gt;_throwDispatchException('Action 'voidV3'...', 5)<br />
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode5">Action 'voidV3' was not found on handler 'payments'<br>#0 [internal function]: Phalcon\Mvc\Dispatcher-&gt;_throwDispatchException('Action 'voidV3'...', 5)<br />
 #1 [internal function]: Phalcon\Dispatcher-&gt;dispatch()<br />
 #2 C:\wamp64\www\single-page-payment-pocket\public\index.php(41): Phalcon\Mvc\Application-&gt;handle()<br />
 #3 {main}</code></pre>
@@ -1923,10 +1923,10 @@
                     <tr>
                         <td> </td>
                         <td>Response header
-                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                            <button class="copy-btn" data-copy-target="#requestResponseHeaderCode5">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode5"> cache-control: no-cache 
  content-encoding: gzip 
  content-type: text/html; charset=UTF-8 
  date: Wed,21 May 2025 07:50:04 GMT 
@@ -1950,11 +1950,11 @@
             <div class="rp-subtitle">Response Example</div>
             <p class="rp-text">
                 Curl
-                <button class="copy-btn" onclick="copyToClipboard('#curlCode')">
+                <button class="copy-btn" data-copy-target="#curlCode6">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+            <pre class="rp-code-block"><code id="curlCode6">curl -X <span class="gron">'POST'</span> \
   /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV2 \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
@@ -1969,11 +1969,11 @@
 
             <p class="rp-text">
                 Request URL
-                <button class="copy-btn" onclick="copyToClipboard('#requestUrlCode')">
+                <button class="copy-btn" data-copy-target="#requestUrlCode6">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV2</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode6">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV2</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1986,10 +1986,10 @@
                     <tr>
                         <td>205</td>
                         <td>Response header
-                            <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
+                            <button class="copy-btn" data-copy-target="#requestResponseHeaderCode6">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode6"> cache-control: no-cache 
  content-length: 0 
  content-type: application/json; charset=UTF-8 
  date: Wed,21 May 2025 07:58:55 GMT 

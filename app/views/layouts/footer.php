@@ -122,28 +122,54 @@
         }
     });
 
-    function copyToClipboard(selector) {
-        const codeEl = document.querySelector(selector);
-        if (!codeEl) return alert('Code block not found!');
+    // function copyToClipboard(selector) {
+    //     const codeEl = document.querySelector(selector);
+    //     if (!codeEl) return alert('Code block not found!');
 
-        const tempElement = document.createElement("textarea");
-        tempElement.style.position = "absolute";
-        tempElement.style.left = "-9999px";
-        tempElement.value = codeEl.innerText; // gets full clean text, ignoring <span>
+    //     const tempElement = document.createElement("textarea");
+    //     tempElement.style.position = "absolute";
+    //     tempElement.style.left = "-9999px";
+    //     tempElement.value = codeEl.innerText; // gets full clean text, ignoring <span>
 
-        document.body.appendChild(tempElement);
-        tempElement.select();
+    //     document.body.appendChild(tempElement);
+    //     tempElement.select();
 
-        try {
-            document.execCommand("copy");
-            alert("Copied to clipboard!");
-        } catch (err) {
-            console.error("Copy failed:", err);
-            alert("Copy failed!");
-        }
+    //     try {
+    //         document.execCommand("copy");
+    //         alert("Copied to clipboard!");
+    //     } catch (err) {
+    //         console.error("Copy failed:", err);
+    //         alert("Copy failed!");
+    //     }
 
-        document.body.removeChild(tempElement);
-    }
+    //     document.body.removeChild(tempElement);
+    // }
+
+    document.querySelectorAll('.copy-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const targetSelector = button.getAttribute('data-copy-target');
+            const codeEl = document.querySelector(targetSelector);
+            if (!codeEl) return alert('Code block not found!');
+
+            const tempElement = document.createElement("textarea");
+            tempElement.style.position = "absolute";
+            tempElement.style.left = "-9999px";
+            tempElement.value = codeEl.innerText;
+
+            document.body.appendChild(tempElement);
+            tempElement.select();
+
+            try {
+                document.execCommand("copy");
+                alert("Copied to clipboard!");
+            } catch (err) {
+                console.error("Copy failed:", err);
+                alert("Copy failed!");
+            }
+
+            document.body.removeChild(tempElement);
+        });
+    });
 </script>
 
 
