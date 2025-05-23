@@ -415,6 +415,8 @@
 
 /* start of guide section */
 
+
+
 .pldq-dropdown {
   margin-bottom: 1rem;
   border: 1px solid #ff7f00;
@@ -592,7 +594,8 @@
   background-color: #fcfdff;
   border-radius: 10px;
   margin-top: 10px;
-  width: 19%;
+  width: fit-content;
+
 }
 
 /* Tabs Section */
