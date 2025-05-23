@@ -735,7 +735,7 @@
 .table-stuff th,
 .table-stuff td {
   text-align: left !important;
-  padding: 8px 12px;
+  padding: 5px 10px !important;
 }
 
 .table-stuff td.italic {

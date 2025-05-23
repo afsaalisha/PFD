@@ -456,8 +456,6 @@
                                         <p>Controls <span class="red">Accept</span> header.</p>
                                     </div>
 
-
-
                                     <div class="pldq-tab-content" data-tab="example">
                                         <pre class="pldq-code-block"><code>{
   "payment_url": <span class="gron">"https://pocket-pay.threeg.asia/?tx_id=9086714 900001640a8c9581d72"</span>,
