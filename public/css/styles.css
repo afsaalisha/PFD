@@ -774,6 +774,8 @@
   font-style: italic;
 }
 
+
+
 .rp-table-stuff {
   border-collapse: collapse;
   color: #fcfdff;
@@ -787,31 +789,27 @@
   vertical-align: top;
 }
 
-.rp-code-block {
+.guide-right-panel .rp-code-block,
+.guide-right-panel .rp-td-code-block,
+.guide-right-panel pre {
   background: #2d2d2d;
   color: #f8f8f2;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 16px 20px;
+  border-radius: 8px;
   overflow-x: auto;
   font-family: monospace;
   font-size: 0.9rem;
   white-space: pre-wrap;
-  word-break: break-word;    
-  width: 46% !important;
+  word-break: break-word;
+
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.rp-td-code-block {
-  background: #2d2d2d;
-  color: #f8f8f2;
-  padding: 10px;
-  border-radius: 4px;
-  overflow-x: auto;
-  font-family: monospace;
-  font-size: 0.9rem;
-  word-break: break-word;    
-  white-space: pre-wrap;
-  width: 40% !important;
-}
+
 
 .rp-table-stuff td.italic {
   font-style: italic;
