@@ -1233,14 +1233,26 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
-  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fhash \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
   -H <span class="gron">'x-swaggerhub-cookie: '</span> \
   -d <span class="gron">'{
   "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
-  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2",
+  "subamount_1": 100,
+  "subamount_1_label": "Order Total",
+  "subamount_2": 0,
+  "subamount_3": 0,
+  "subamount_4": 0,
+  "subamount_5": 0,
+  "order_id": 10422,
+  "order_info": "This is the order info 10422.",
+  "order_desc": "Description",
+  "return_url": "https://www.threegmedia.com/",
+  "callback_url": "http://pocket-api.threeg.asia/callbase",
+  "discount": 0
 }'</span></code></pre>
 
             <p class="rp-text">
@@ -1249,7 +1261,7 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fhash</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1264,8 +1276,8 @@
                         <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
-  "new_id": <span class="gron">"17346779538593713"</span>
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">{
+  "hashed_data": <span class="gron">"5275876304dba644b111c19d44ed0da81ca797aaf1371abf2e0b45126f8a4993"</span>
 }</code></pre>
                         </td>
                     </tr>
@@ -1275,18 +1287,18 @@
                             <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
  content-encoding: gzip 
  content-type: application/json; charset=UTF-8 
- date: Fri,09 May 2025 04:17:00 GMT 
- etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ date: Wed,21 May 2025 07:07:11 GMT 
+ etag: W/"52-5QOK0ZvtFj8Estpaq+ZKt3msi5Y" 
  expires: -1 
  pragma: no-cache 
  ratelimit: "10000-in-1min"; r=9999; t=60 
  ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
  server: nginx 
  status: 200 OK 
- x-powered-by: PHP/7.3.21</code></pre>
+ x-powered-by: PHP/7.3.21 </code></pre>
                         </td>
                     </tr>
                 </tbody>
@@ -1305,14 +1317,33 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
-  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fcreate \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
   -H <span class="gron">'x-swaggerhub-cookie: '</span> \
   -d <span class="gron">'{
   "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
-  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2",
+  "hashed_data": "9f3e806346622936152aedd5e95a7db0978f623b8efddda356a0c291ec747e20",
+  "subamount_1": 100,
+  "subamount_2": 0,
+  "subamount_3": 0,
+  "subamount_4": 0,
+  "subamount_5": 0,
+  "subamount_1_label": "Order Total",
+  "subamount_2_label": "string",
+  "subamount_3_label": "string",
+  "subamount_4_label": "string",
+  "subamount_5_label": "string",
+  "order_id": 10422,
+  "order_info": "This is the order info 10422.",
+  "order_desc": "Description",
+  "return_url": "https://www.threegmedia.com/",
+  "callback_url": "http://pocket-api.threeg.asia/callbase",
+  "discount": 0,
+  "promo": "string",
+  "promo_code": "string"
 }'</span></code></pre>
 
             <p class="rp-text">
@@ -1321,7 +1352,7 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fcreate</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1332,33 +1363,33 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>200</td>
+                        <td>216</td>
                         <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
-  "new_id": <span class="gron">"17346779538593713"</span>
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">{
+  "message": <span class="gron">"Incorrect Hashed Data submitted."</span>
 }</code></pre>
                         </td>
                     </tr>
                     <tr>
-                        <td> </td>
+                        <td></td>
                         <td>Response header
                             <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
- content-encoding: gzip 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+ content-length: 46 
  content-type: application/json; charset=UTF-8 
- date: Fri,09 May 2025 04:17:00 GMT 
- etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ date: Wed,21 May 2025 07:32:07 GMT 
+ etag: W/"2e-K3ISpzCI6PERzORCUd6QR35HEbY" 
  expires: -1 
  pragma: no-cache 
  ratelimit: "10000-in-1min"; r=9999; t=60 
  ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
  server: nginx 
- status: 200 OK 
- x-powered-by: PHP/7.3.21</code></pre>
+ status: 216 ERR 
+ x-powered-by: PHP/7.3.21 </code></pre>
                         </td>
                     </tr>
                 </tbody>
@@ -1377,14 +1408,15 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
-  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fstatus \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
   -H <span class="gron">'x-swaggerhub-cookie: '</span> \
   -d <span class="gron">'{
   "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
-  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2",
+  "order_id": 10422
 }'</span></code></pre>
 
             <p class="rp-text">
@@ -1393,7 +1425,7 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2Fstatus</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1408,8 +1440,10 @@
                         <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
-  "new_id": <span class="gron">"17346779538593713"</span>
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">{
+  "method": <span class="gron">"Pocket QR"</span>,
+  "status_id": <span class="red">0</span>,
+  "final_amount": <span class="gron">"1.00"</span>
 }</code></pre>
                         </td>
                     </tr>
@@ -1419,11 +1453,11 @@
                             <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
  content-encoding: gzip 
  content-type: application/json; charset=UTF-8 
- date: Fri,09 May 2025 04:17:00 GMT 
- etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ date: Wed,21 May 2025 07:45:55 GMT 
+ etag: W/"3a-isPsjgRIQuZ0WHoGsbI70pHoncQ" 
  expires: -1 
  pragma: no-cache 
  ratelimit: "10000-in-1min"; r=9999; t=60 
@@ -1449,14 +1483,18 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
-  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV3 \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
   -H <span class="gron">'x-swaggerhub-cookie: '</span> \
   -d <span class="gron">'{
   "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
-  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+  "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2",
+  "cref": "C000000000000",
+  "order_ref": "64757",
+  "admin_name": "Pocket Admin",
+  "reason": "Voiding for test."
 }'</span></code></pre>
 
             <p class="rp-text">
@@ -1465,7 +1503,7 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV3</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1480,9 +1518,10 @@
                         <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
-  "new_id": <span class="gron">"17346779538593713"</span>
-}</code></pre>
+                            <pre class="rp-td-code-block"><code id="requestResponseBodyCode">Action 'voidV3' was not found on handler 'payments'<br>#0 [internal function]: Phalcon\Mvc\Dispatcher-&gt;_throwDispatchException('Action 'voidV3'...', 5)<br />
+#1 [internal function]: Phalcon\Dispatcher-&gt;dispatch()<br />
+#2 C:\wamp64\www\single-page-payment-pocket\public\index.php(41): Phalcon\Mvc\Application-&gt;handle()<br />
+#3 {main}</code></pre>
                         </td>
                     </tr>
                     <tr>
@@ -1491,18 +1530,16 @@
                             <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
  content-encoding: gzip 
- content-type: application/json; charset=UTF-8 
- date: Fri,09 May 2025 04:17:00 GMT 
- etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ content-type: text/html; charset=UTF-8 
+ date: Wed,21 May 2025 07:50:04 GMT 
+ etag: W/"157-JLf3BDhUfFaC0lLbg/wMThe5UOQ" 
  expires: -1 
- pragma: no-cache 
  ratelimit: "10000-in-1min"; r=9999; t=60 
  ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
  server: nginx 
- status: 200 OK 
- x-powered-by: PHP/7.3.21</code></pre>
+ x-powered-by: PHP/7.3.21 </code></pre>
                         </td>
                     </tr>
                 </tbody>
@@ -1521,8 +1558,8 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
-  /proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId \
+            <pre class="rp-code-block"><code id="curlCode">curl -X <span class="gron">'POST'</span> \
+  /proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV2 \
   -H <span class="gron">'accept: application/json'</span> \
   -H <span class="gron">'Content-Type: application/json'</span> \
   -H <span class="gron">'x-swaggerhub-cookie: '</span> \
@@ -1537,7 +1574,7 @@
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                 </button>
             </p>
-            <pre class="pldq-code-block"><code id="requestUrlCode">/proxy?proxy-token=tjxcrka&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FgetNewOrderId</code></pre>
+            <pre class="rp-code-block"><code id="requestUrlCode">/proxy?proxy-token=t57012g&url=http%3A%2F%2Fpay.threeg.asia%2Fpayments%2FvoidV2</code></pre>
 
             <table class="rp-table-stuff">
                 <thead>
@@ -1548,32 +1585,22 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>200</td>
-                        <td>Response body <button class="copy-btn" onclick="copyToClipboard('#requestResponseBodyCode')">
-                                <i class="fa fa-clipboard" aria-hidden="true"></i>
-                            </button>
-                            <pre class="pldq-code-block"><code id="requestResponseBodyCode">{
-  "new_id": <span class="gron">"17346779538593713"</span>
-}</code></pre>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> </td>
+                        <td>205</td>
                         <td>Response header
                             <button class="copy-btn" onclick="copyToClipboard('#requestResponseHeaderCode')">
                                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                             </button>
-                            <pre class="pldq-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
- content-encoding: gzip 
+                            <pre class="rp-td-code-block"><code id="requestResponseHeaderCode"> cache-control: no-cache 
+ content-length: 0 
  content-type: application/json; charset=UTF-8 
- date: Fri,09 May 2025 04:17:00 GMT 
- etag: W/"1e-is5GJFLy2kLFN6VpWfemHKpS1Vc" 
+ date: Wed,21 May 2025 07:58:55 GMT 
+ etag: W/"2a-Q453jlrBYEYHN1Za20rjF300fjM" 
  expires: -1 
  pragma: no-cache 
  ratelimit: "10000-in-1min"; r=9999; t=60 
  ratelimit-policy: "10000-in-1min"; q=10000; w=60; pk=:ZDZkOTM5M2UwNzk5: 
  server: nginx 
- status: 200 OK 
+ status: 205 ERR 
  x-powered-by: PHP/7.3.21</code></pre>
                         </td>
                     </tr>
