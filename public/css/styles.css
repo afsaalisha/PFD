@@ -496,8 +496,12 @@
   overflow-x: auto;
   font-family: monospace;
   font-size: 0.9rem;
-  white-space: pre-wrap;
+  white-space: pre-wrap;     
+  word-break: break-word;    
+  max-width: 100%;           
+  box-sizing: border-box;    
 }
+
 
 .gron {
   color:rgb(61, 255, 148);
