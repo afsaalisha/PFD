@@ -1046,6 +1046,11 @@
     background-color: #e5e7eb;
 }
 
+.schemama-header.active {
+  background-color: #fff; /* or whatever you want */
+  border-color: #ff7f00;
+}
+
 .schemama-header strong {
     font-size: 1.05rem;
     font-weight: 600;
@@ -1064,14 +1069,15 @@
     margin-left: auto;
     white-space: nowrap;
 }
-/* Section blocks */
 .schemama-group details {
+    width: 90%;
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     margin-bottom: 1rem;
     padding: 0.8rem 1.2rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    margin-left: auto !important;
 }
 
 .schemama-group details[open] {

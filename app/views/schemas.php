@@ -758,44 +758,49 @@
 document.addEventListener("DOMContentLoaded", function () {
     const headers = document.querySelectorAll(".schemama-header");
 
-    // Toggle top-level headers
+    // Toggle each top-level group independently
     headers.forEach(header => {
         header.addEventListener("click", function () {
             const currentGroup = header.nextElementSibling;
+            const isOpen = currentGroup.style.display === "block";
 
-            // Close all groups except the clicked one
-            document.querySelectorAll(".schemama-group").forEach(group => {
-                if (group !== currentGroup) {
-                    group.style.display = "none";
-                }
-            });
+            // Toggle visibility
+            if (isOpen) {
+                currentGroup.style.display = "none";
+                header.classList.remove("active");
 
-            // Toggle current group
-            currentGroup.style.display = (currentGroup.style.display === "block") ? "none" : "block";
+                // ❗️Close all open <details> inside this group
+                currentGroup.querySelectorAll("details[open]").forEach(detail => {
+                    detail.removeAttribute("open");
+                });
+            } else {
+                currentGroup.style.display = "block";
+                header.classList.add("active");
+            }
         });
     });
 
-    // Ensure only one <details> is open at a time per group
-    document.querySelectorAll(".schemama-group").forEach(group => {
-        const details = group.querySelectorAll("details");
-
-        details.forEach(detail => {
-            detail.addEventListener("toggle", function () {
-                if (detail.open) {
-                    // Close all others in this group
-                    details.forEach(d => {
-                        if (d !== detail) {
-                            d.removeAttribute("open");
-                        }
-                    });
-                }
-            });
-        });
-    });
-
-    // Optional: Start all closed
+    // Optional: Start all groups closed
     document.querySelectorAll(".schemama-group").forEach(group => {
         group.style.display = "none";
     });
+
+    // Indentation for nested <details> based on depth
+    const details = document.querySelectorAll(".schemama-group details");
+    details.forEach(detail => {
+        let depth = 0;
+        let parent = detail.parentElement;
+
+        while (parent && !parent.classList.contains("schemama-group")) {
+            if (parent.tagName.toLowerCase() === "details") {
+                depth++;
+            }
+            parent = parent.parentElement;
+        }
+
+        detail.style.marginLeft = `${depth * 1.5}rem`;
+        detail.classList.add(`depth-${depth}`);
+    });
 });
 </script>
+
