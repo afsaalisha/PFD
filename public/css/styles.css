@@ -796,6 +796,7 @@
   font-family: monospace;
   font-size: 0.9rem;
   white-space: pre-wrap;
+  word-break: break-word;    
   width: 46% !important;
 }
 
@@ -807,6 +808,7 @@
   overflow-x: auto;
   font-family: monospace;
   font-size: 0.9rem;
+  word-break: break-word;    
   white-space: pre-wrap;
   width: 40% !important;
 }
