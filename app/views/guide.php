@@ -97,10 +97,7 @@
                                         <p>Controls <span class="red">Accept</span> header.</p>
                                     </div>
 
-                                    <div class="pldq-tabs">
-                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
-                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
-                                    </div>
+
 
                                     <div class="pldq-tab-content" data-tab="example">
                                         <pre class="pldq-code-block"><code>{
@@ -275,10 +272,7 @@
                                         <p>Controls <span class="red">Accept</span> header.</p>
                                     </div>
 
-                                    <div class="pldq-tabs">
-                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
-                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
-                                    </div>
+
 
                                     <div class="pldq-tab-content" data-tab="example">
                                         <pre class="pldq-code-block"><code>{
@@ -462,10 +456,7 @@
                                         <p>Controls <span class="red">Accept</span> header.</p>
                                     </div>
 
-                                    <div class="pldq-tabs">
-                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
-                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
-                                    </div>
+
 
                                     <div class="pldq-tab-content" data-tab="example">
                                         <pre class="pldq-code-block"><code>{
@@ -681,10 +672,7 @@
                                         <p>Controls <span class="red">Accept</span> header.</p>
                                     </div>
 
-                                    <div class="pldq-tabs">
-                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
-                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
-                                    </div>
+
 
                                     <div class="pldq-tab-content" data-tab="example">
                                         <pre class="pldq-code-block"><code>{
@@ -849,10 +837,7 @@
                                         <p>Controls <span class="red">Accept</span> header.</p>
                                     </div>
 
-                                    <div class="pldq-tabs">
-                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
-                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
-                                    </div>
+
 
                                     <div class="pldq-tab-content" data-tab="example">
                                         <pre class="pldq-code-block"><code>{
@@ -1032,10 +1017,7 @@
                                         <p>Controls <span class="red">Accept</span> header.</p>
                                     </div>
 
-                                    <div class="pldq-tabs">
-                                        <button class="pldq-tab active" onclick="switchTab(this, 'example')">Example Value</button>
-                                        <button class="pldq-tab" onclick="switchTab(this, 'schema')">Schema</button>
-                                    </div>
+
 
                                     <div class="pldq-tab-content" data-tab="example">
                                         <pre class="pldq-code-block"><code>{
