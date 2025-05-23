@@ -49,7 +49,7 @@
                                 </div>
 
                                 <div class="schema-group">
-                                    <details open>
+                                    <details>
                                         <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
@@ -59,7 +59,7 @@
                                         </div>
                                     </details>
 
-                                    <details open>
+                                    <details>
                                         <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
@@ -109,7 +109,7 @@
                                         <p class="respons-tings">Schema Description</p>
                                         <div class="schema-container">
                                             <div class="schema-header">
-                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <strong>NewOrderIDResponse</strong> <span class="type-label">object</span>
                                                 <div>
                                                     <button onclick="toggleAllSchemas(true)">Expand all</button>
                                                     <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -117,22 +117,13 @@
                                             </div>
 
                                             <div class="schema-group">
-                                                <details open>
-                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>new_id</strong> <span class="type-label">integer</span></summary>
+                                                    <p>Indicates the current order ID number. To be used for hash & create payment</p>
                                                     <div class="example-section">
                                                         <span>Examples:</span>
                                                         <ul>
-                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
-                                                        </ul>
-                                                    </div>
-                                                </details>
-
-                                                <details open>
-                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
-                                                    <div class="example-section">
-                                                        <span>Examples:</span>
-                                                        <ul>
-                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                            <li>#0=1234567898</li>
                                                         </ul>
                                                     </div>
                                                 </details>
@@ -216,7 +207,7 @@
 
                             <div class="schema-container">
                                 <div class="schema-header">
-                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <strong>HashedData</strong> <span class="type-label">object</span>
                                     <div>
                                         <button onclick="toggleAllSchemas(true)">Expand all</button>
                                         <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -224,25 +215,159 @@
                                 </div>
 
                                 <div class="schema-group">
-                                    <details open>
+                                    <details>
                                         <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                <li>#0="XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
                                             </ul>
                                         </div>
                                     </details>
 
-                                    <details open>
+                                    <details>
                                         <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                <li>#0="FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
                                             </ul>
                                         </div>
                                     </details>
+
+                                    <details>
+                                        <summary><strong>subamount_1</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Sub-total 1 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=100</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+
+                                    <details>
+                                        <summary><strong>subamount_1_label</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Label for subamount_1 in order breakdown.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Order Total"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_2</strong> <span class="type-label">interger</span></summary>
+                                        <p>Sub-total 2 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_3</strong> <span class="type-label">interger</span></summary>
+                                        <p>Sub-total 3 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_4</strong> <span class="type-label">interger</span></summary>
+                                        <p>Sub-total 4 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_5</strong> <span class="type-label">interger</span></summary>
+                                        <p>Sub-total 5 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_id</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Unique order ID. Maximum of 18 integers. Must be generated via /payments/getNewOrderId endpoint.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=10422</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_info</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Order description</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="This is the order info 10422."</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_desc</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Label for order description.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Description"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>return_url</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>URL for user to be redirected to after payment is successfully made.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="https://www.threegmedia.com/"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>callback_url</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>URL to be called upon payment attempt. Developers must make sure that calling both the redirect URL and callback URL will not result in double dispense. Make sure the callback URL is functioning to avoid issues with payment processing. If merchant does not have a callback_url prepared, they may use the default callback_url provided in the example of this documentation. The callback URL will be called using a GET method with the following sample JSON file as the input; { "successIndicator":"7Ay9W1PXp3N2QTS8aHLC", "Message":"Successful Payment", "OrderId":"131" }</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="http://pocket-api.threeg.asia/callbase"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>discount</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Amount to be deducted from the susubamount_1 till subamount_5, in cents <span class="type-label">array</span></p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
                                 </div>
                             </div>
                         </div>
@@ -284,7 +409,7 @@
                                         <p class="respons-tings">Schema Description</p>
                                         <div class="schema-container">
                                             <div class="schema-header">
-                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <strong>HashedDataResponse</strong> <span class="type-label">object</span>
                                                 <div>
                                                     <button onclick="toggleAllSchemas(true)">Expand all</button>
                                                     <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -292,17 +417,18 @@
                                             </div>
 
                                             <div class="schema-group">
-                                                <details open>
-                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>hashed_data</strong><span class="type-label">string</span></summary>
+                                                    <p>Hashed data containing transaction information. <span class="type-label">array</span></p>
                                                     <div class="example-section">
                                                         <span>Examples:</span>
                                                         <ul>
-                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                            <li>#0="9f3e806346622936152aedd5e95a7db0978f623b8efddda356a0c291ec747e20"</li>
                                                         </ul>
                                                     </div>
                                                 </details>
 
-                                                <details open>
+                                                <details>
                                                     <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                                     <div class="example-section">
                                                         <span>Examples:</span>
@@ -400,7 +526,7 @@
 
                             <div class="schema-container">
                                 <div class="schema-header">
-                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <strong>Create</strong> <span class="type-label">object</span>
                                     <div>
                                         <button onclick="toggleAllSchemas(true)">Expand all</button>
                                         <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -408,25 +534,188 @@
                                 </div>
 
                                 <div class="schema-group">
-                                    <details open>
+                                    <details>
                                         <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                <li>#0="XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
                                             </ul>
                                         </div>
                                     </details>
 
-                                    <details open>
+                                    <details>
                                         <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                <li>#0="FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
                                             </ul>
                                         </div>
                                     </details>
+
+                                    <details>
+                                        <summary><strong>subamount_1</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Sub-total 1 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=100</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_2</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Sub-total 2 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_3</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Sub-total 3 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_4</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Sub-total 4 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_5</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Sub-total 5 to be paid in cents</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_1_label</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Label for subamount_1 in order breakdown.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Order Total"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_2_label</strong> <span class="type-label">string</span></summary>
+                                        <p>Label for subamount_2 in order breakdown.</p>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_3_label</strong> <span class="type-label">string</span></summary>
+                                        <p>Label for subamount_3 in order breakdown.</p>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_4_label</strong> <span class="type-label">string</span></summary>
+                                        <p>Label for subamount_4 in order breakdown.</p>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>subamount_5_label</strong> <span class="type-label">string</span></summary>
+                                        <p>Label for subamount_5 in order breakdown.</p>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_id</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Unique order ID. Maximum of 18 integers. Must be generated via /payments/getNewOrderId endpoint.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=10422</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_info</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Order description</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="This is the order info 10422."</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_desc</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Label for order description.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Description"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>return_url</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>URL for user to be redirected to after payment is successfully made.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="https://www.threegmedia.com/"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>callback_url</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>URL to be called upon payment attempt. Developers must make sure that calling both the redirect URL and callback URL will not result in double dispense. Make sure the callback URL is functioning to avoid issues with payment processing. If merchant does not have a callback_url prepared, they may use the default callback_url provided in the example of this documentation. The callback URL will be called using a GET method with the following sample JSON file as the input; { "successIndicator":"7Ay9W1PXp3N2QTS8aHLC", "Message":"Successful Payment", "OrderId":"131" }</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="http://pocket-api.threeg.asia/callbase"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>discount</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Amount to be deducted from the susubamount_1 till subamount_5, in cents <span class="type-label">array</span></p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=0</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>promo</strong> <span class="type-label">string</span> </summary>
+                                        <p>Label for discount amount in total breakdown</p>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>promo_code</strong> <span class="type-label">string</span> </summary>
+                                        <p>Optional - Only if the merchant wants to show specific Promo Code for this order in the payment page</p>
+                                    </details>
+
                                 </div>
                             </div>
                         </div>
@@ -469,7 +758,7 @@
                                         <p class="respons-tings">Schema Description</p>
                                         <div class="schema-container">
                                             <div class="schema-header">
-                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <strong>CreateResponse</strong> <span class="type-label">object</span>
                                                 <div>
                                                     <button onclick="toggleAllSchemas(true)">Expand all</button>
                                                     <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -477,25 +766,48 @@
                                             </div>
 
                                             <div class="schema-group">
-                                                <details open>
-                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>payment_url</strong> <span class="type-label">string</span></summary>
+                                                    <p>URL for customer to make payment from.</p>
                                                     <div class="example-section">
-                                                        <span>Examples:</span>
+                                                        <span>Examples:</span><span class="type-label">array</span>
                                                         <ul>
-                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                            <li>#0="https://pocket-pay.threeg.asia/?tx_id=9086714 900001640a8c9581d72"</li>
                                                         </ul>
                                                     </div>
                                                 </details>
 
-                                                <details open>
-                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>success_indicator</strong> <span class="type-label">string</span></summary>
+                                                    <p>Unique string to indicate if the transaction has been successfully paid. This will be passed via GET to the callback_url submitted in this API call.</p>
                                                     <div class="example-section">
-                                                        <span>Examples:</span>
+                                                        <span>Examples:</span><span class="type-label">array</span>
                                                         <ul>
-                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                            <li>#0="7Mt2HFzywguxK0S6jDET"</li>
                                                         </ul>
                                                     </div>
                                                 </details>
+                                                <details>
+                                                    <summary><strong>order_ref</strong> <span class="type-label">string</span></summary>
+                                                    <p>Unique order reference. Can be used as input for voiding function.</p>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span><span class="type-label">array</span>
+                                                        <ul>
+                                                            <li>#0="64757"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                                <details>
+                                                    <summary><strong>qr</strong> <span class="type-label">string</span></summary>
+                                                    <p>A dynamic QR string that is scannable using the Pocket mobile app for making Pocket payment.</p>
+                                                    <div class="example-section">
+                                                        <span>Examples:</span><span class="type-label">array</span>
+                                                        <ul>
+                                                            <li>#0="4XVUkHFdhideMCPENze61e8oV3D8QG3zlnEwdlYkt4+6Hfl9gPzaj6TwoQlFp8DVV0gzKbncHcclHUVNwCj7GUAMijIP/ICG2j8lkAzDjeXWLIXv+ESLSl662s4dyHvxk2RZuXCkk32P8YFSdm3sorbg2W2eVvXQhyJv6GGJgkjHDy6+k1WGauhPL 2boL+S5EMloW4HJ4Lqw/lm8OGq63A=="</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
                                             </div>
                                         </div>
                                     </div>
@@ -614,7 +926,7 @@
 
                             <div class="schema-container">
                                 <div class="schema-header">
-                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <strong>Status</strong> <span class="type-label">object</span>
                                     <div>
                                         <button onclick="toggleAllSchemas(true)">Expand all</button>
                                         <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -622,22 +934,33 @@
                                 </div>
 
                                 <div class="schema-group">
-                                    <details open>
+                                    <details>
                                         <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                <li>#0="XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
                                             </ul>
                                         </div>
                                     </details>
 
-                                    <details open>
+                                    <details>
                                         <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                <li>#0="FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_id</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <p>Unique order ID. Maximum of 18 integers. Must be generated via /payments/getNewOrderId endpoint.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=10422</li>
                                             </ul>
                                         </div>
                                     </details>
@@ -685,7 +1008,7 @@
                                         <p class="respons-tings">Schema Description</p>
                                         <div class="schema-container">
                                             <div class="schema-header">
-                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <strong>StatusResponse</strong> <span class="type-label">object</span>
                                                 <div>
                                                     <button onclick="toggleAllSchemas(true)">Expand all</button>
                                                     <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -693,22 +1016,48 @@
                                             </div>
 
                                             <div class="schema-group">
-                                                <details open>
-                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>method</strong> <span class="type-label">string</span></summary>
+                                                    <p>Payment method.</p>
                                                     <div class="example-section">
                                                         <span>Examples:</span>
                                                         <ul>
-                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                            <li>#0="Pocket QR"</li>
+                                                            <li>#1="Card"</li>
+                                                            <li>#2="Biller"</li>
                                                         </ul>
                                                     </div>
                                                 </details>
 
-                                                <details open>
-                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>status_id</strong> <span class="type-label">interger</span></summary>
+                                                    <p>Status of transaction.</p>
+                                                    <div class="example-section">
+                                                        <span>Enum:</span>
+                                                        <ul>
+                                                            <li>#0="Not Paid"</li>
+                                                            <li>#1="Paid"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+                                                <details>
+                                                    <summary><strong>final_amount</strong> <span class="type-label">string</span></summary>
+                                                    <p>Transaction amount.</p>
                                                     <div class="example-section">
                                                         <span>Examples:</span>
                                                         <ul>
-                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                            <li>#0="1.00"</li>
+                                                        </ul>
+                                                    </div>
+                                                </details>
+
+                                                <details>
+                                                    <summary><strong>order_ref</strong> <span class="type-label">string</span></summary>
+                                                    <p>Unique order reference. Can be used as input for voiding function.</p>
+                                                    <div class="example-section">
+                                                        <span>Enum:</span>
+                                                        <ul>
+                                                            <li>#0="64757"</li>
                                                         </ul>
                                                     </div>
                                                 </details>
@@ -779,7 +1128,7 @@
 
                             <div class="schema-container">
                                 <div class="schema-header">
-                                    <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                    <strong>Any of</strong> <span class="type-label">object</span>
                                     <div>
                                         <button onclick="toggleAllSchemas(true)">Expand all</button>
                                         <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -787,22 +1136,66 @@
                                 </div>
 
                                 <div class="schema-group">
-                                    <details open>
+                                    <details>
                                         <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                <li>#0="XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
                                             </ul>
                                         </div>
                                     </details>
 
-                                    <details open>
+                                    <details>
                                         <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                <li>#0="FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>cref</strong> <span class="type-label">string</span></summary>
+                                        <div class="example-section">
+                                            <p>Reference generated from the user Pocket app receipt upon successful payment. Viewable by merchants from the Pocket Merchant Portal.</p>
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="C000000000000"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_ref</strong> <span class="type-label">string</span></summary>
+                                        <div class="example-section">
+                                            <p>Reference generated from /payments/create endpoint for successful payment. Also returned by the /payments/status endpoint.</p>
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="64757"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>admin_name</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Any admin name for logging. No verification will be made.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Pocket Admin"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>reason</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Reason for voiding for logging.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Voiding for test."</li>
                                             </ul>
                                         </div>
                                     </details>
@@ -847,7 +1240,7 @@
                                         <p class="respons-tings">Schema Description</p>
                                         <div class="schema-container">
                                             <div class="schema-header">
-                                                <strong>NewOrderID</strong> <span class="type-label">object</span>
+                                                <strong>VoidV3Response</strong> <span class="type-label">object</span>
                                                 <div>
                                                     <button onclick="toggleAllSchemas(true)">Expand all</button>
                                                     <button onclick="toggleAllSchemas(false)">Collapse all</button>
@@ -855,22 +1248,12 @@
                                             </div>
 
                                             <div class="schema-group">
-                                                <details open>
-                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>message</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                                     <div class="example-section">
-                                                        <span>Examples:</span>
+                                                        <span>Examples:</span><span class="type-label">array</span>
                                                         <ul>
-                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
-                                                        </ul>
-                                                    </div>
-                                                </details>
-
-                                                <details open>
-                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
-                                                    <div class="example-section">
-                                                        <span>Examples:</span>
-                                                        <ul>
-                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                            <li>#0="Order marked as voided."</li>
                                                         </ul>
                                                     </div>
                                                 </details>
@@ -967,22 +1350,55 @@
                                 </div>
 
                                 <div class="schema-group">
-                                    <details open>
+                                    <details>
                                         <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                <li>#0="XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
                                             </ul>
                                         </div>
                                     </details>
 
-                                    <details open>
+                                    <details>
                                         <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                         <div class="example-section">
                                             <span>Examples:</span>
                                             <ul>
-                                                <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                <li>#0="FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>order_id</strong> <span class="type-label">interger</span> <span class="required">*</span></summary>
+                                        <div class="example-section">
+                                            <p>Unique order ID. Maximum of 18 integers. Must be generated via /payments/getNewOrderId endpoint.</p>
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0=10422</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>admin_name</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Any admin name for logging. No verification will be made.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Pocket Admin"</li>
+                                            </ul>
+                                        </div>
+                                    </details>
+
+                                    <details>
+                                        <summary><strong>reason</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                        <p>Reason for voiding for logging.</p>
+                                        <div class="example-section">
+                                            <span>Examples:</span>
+                                            <ul>
+                                                <li>#0="Voiding for test."</li>
                                             </ul>
                                         </div>
                                     </details>
@@ -1036,22 +1452,22 @@
                                             </div>
 
                                             <div class="schema-group">
-                                                <details open>
-                                                    <summary><strong>api_key</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>message</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                                     <div class="example-section">
-                                                        <span>Examples:</span>
+                                                        <span>Examples:</span><span class="type-label">array</span>
                                                         <ul>
-                                                            <li>"XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq"</li>
+                                                            <li>#0="Order marked as voided."</li>
                                                         </ul>
                                                     </div>
                                                 </details>
 
-                                                <details open>
-                                                    <summary><strong>salt</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
+                                                <details>
+                                                    <summary><strong>cref</strong> <span class="type-label">string</span> <span class="required">*</span></summary>
                                                     <div class="example-section">
-                                                        <span>Examples:</span>
+                                                        <span>Examples:</span><span class="type-label">array</span>
                                                         <ul>
-                                                            <li>"FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"</li>
+                                                            <li>#0="123456"</li>
                                                         </ul>
                                                     </div>
                                                 </details>
@@ -1130,7 +1546,7 @@
         </div>
     </aside>
 
-    <!-- Guide Right Panel -->
+    <!-- neworderid Guide Right Panel -->
     <aside class="guide-right-panel" id="guideRightPanel1" style="display: none;">
         <button id="closeGuidePanel" class="closeBtn">✖</button>
         <div class="guide-right-box">
@@ -1202,7 +1618,7 @@
         </div>
     </aside>
 
-    <!-- Guide Right Panel -->
+    <!-- hash Guide Right Panel -->
     <aside class="guide-right-panel" id="guideRightPanel2" style="display: none;">
         <button id="closeGuidePanel" class="closeBtn">✖</button>
         <div class="guide-right-box">
@@ -1286,7 +1702,7 @@
         </div>
     </aside>
 
-    <!-- Guide Right Panel -->
+    <!-- create Guide Right Panel -->
     <aside class="guide-right-panel" id="guideRightPanel3" style="display: none;">
         <button id="closeGuidePanel" class="closeBtn">✖</button>
         <div class="guide-right-box">
@@ -1377,7 +1793,7 @@
         </div>
     </aside>
 
-    <!-- Guide Right Panel -->
+    <!-- status Guide Right Panel -->
     <aside class="guide-right-panel" id="guideRightPanel4" style="display: none;">
         <button id="closeGuidePanel" class="closeBtn">✖</button>
         <div class="guide-right-box">
@@ -1452,7 +1868,7 @@
         </div>
     </aside>
 
-    <!-- Guide Right Panel -->
+    <!-- v3 Guide Right Panel -->
     <aside class="guide-right-panel" id="guideRightPanel5" style="display: none;">
         <button id="closeGuidePanel" class="closeBtn">✖</button>
         <div class="guide-right-box">
@@ -1527,7 +1943,7 @@
         </div>
     </aside>
 
-    <!-- Guide Right Panel -->
+    <!-- v2 Guide Right Panel -->
     <aside class="guide-right-panel" id="guideRightPanel6" style="display: none;">
         <button id="closeGuidePanel" class="closeBtn">✖</button>
         <div class="guide-right-box">
@@ -1546,6 +1962,9 @@
   -d <span class="gron">'{
   "api_key": "XnUgH1PyIZ8p1iF2IbKUiOBzdrLPNnWq",
   "salt": "FOLzaoJSdbgaNiVVA73vGiIR7yovZury4OdOalPFoWTdKmDVxfoJCJYTs4nhUFS2"
+  "order_id": 10422,
+  "admin_name": "Pocket Admin",
+  "reason": "Voiding for test."
 }'</span></code></pre>
 
             <p class="rp-text">
