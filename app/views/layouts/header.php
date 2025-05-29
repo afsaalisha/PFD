@@ -36,7 +36,7 @@ if (!isset($hasSidebar)) {
     <nav>
       <a href="/PFD/woo">Documentation</a>
       <a href="/PFD/guide">Guidelines</a>
-      <a href="/PFD/merchant">Pocket Merchant</a>
+      <a href="/PFD/void">Pocket Merchant</a>
       <!-- <a href="/PFD/partner">Pocket Partner</a> -->
       <a href="/PFD/partner">Pocket Partner</a>
       <a href="http://localhost/poshet/home">Go to Merchant Portal</a>
