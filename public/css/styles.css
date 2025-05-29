@@ -1176,3 +1176,63 @@
     margin-left: 8px;
 }
 /* end of schema section  */
+
+/* start of keys.php */
+
+.key-content {
+  flex: 1;
+  padding: 20px 40px;
+  overflow-y: auto;
+  background: transparent;
+}
+
+.key-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.key-content hr {
+  border: none;
+  border-top: 2px solid #f47b4c;
+  margin-bottom: 20px;
+}
+
+.key-content ol {
+  padding-left: 24px;
+  counter-reset: step-counter;
+}
+
+.key-content ol li {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 0; /* removed padding */
+  background: transparent; /* clear background */
+  border: none; /* no border */
+  box-shadow: none; /* no shadow */
+  line-height: 1.6;
+}
+
+.key-content ol li p {
+  margin-bottom: 12px;
+}
+
+.key-content ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #444;
+}
+
+.key-image {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.key-image {
+  width: 60%;
+  height: auto;
+}
+
+/* end of keys.php */
