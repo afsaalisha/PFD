@@ -2,45 +2,56 @@
 <div class="page-container">
     <?php include 'layouts/merchant-sidebar.php'; ?>
 
-    <main class="doc-content">
+    <main class="key-content">
 
         <div class="content-header">
-            <h2>How to Generate New Payment Links</h2>
+            <h2>How to Generate Static Payment Link Module</h2>
         </div>
 
         <ol>
             <li>
-                <p>Log in to the <strong>Pocket Merchant Portal.</strong></p>
-                <img src="../public/images/pmp.png" alt="Pocket Merchant Portal" class="key-image">
+                <p>Go to terminal to create a new terminal (if there is no already existing terminal, or if you intend to use a separate terminal to accept online web payment)</p>
+                <img src="../public/images/payment/cnt.png" alt="Terminal" class="key-image">
             </li>
             <li>
-                <p>Navigate to the <strong>Terminal</strong> page.</p>
-                <img src="../public/images/tp.png" alt="Terminal Page" class="key-image">
+                <p>Go to the ‘Manage Keys’ page & ‘generate new keys’ to get the API key and API salt for the newly created terminal.</p>
+                <img src="../public/images/payment/nct.png" alt="Newly Created Terminal" class="key-image">
             </li>
             <li>
-                <p>Create a new Terminal Slot. Each slot indicates a different payment terminal, which will be reflected in the payment receipt of your client.<strong> Make sure each terminal ID is unique.</strong></p>
+                <p>Select the terminal you want to create the credentials for.</p>
+                <img src="../public/images/payment/ctc.png" alt="Create Credentials" class="key-image">
+            </li>
+            <li>
+                <p>Go to ‘Manage Payment Link’ page and click on ‘Create new Link’.</p>
+                <img src="../public/images/payment/cnl.png" alt="Create new Link" class="key-image">
+            </li>
+            <li>
+                <p>Select the terminal you have just created and enter a redirect link. This can be your homepage, or a general thank you page for your website.</p>
+                <img src="../public/images/payment/earl.png" alt="Enter Redirect Link" class="key-image">
+            </li>
+            <li>
+                <p>You can now copy the payment link to share to your customer.</p>
+                <img src="../public/images/payment/styc.png" alt="Copy Payment Link" class="key-image">
+            </li>
+            <li>
+                <p>You may overview all your created link as well.</p>
+                <img src="../public/images/payment/ocl.png" alt="Overview" class="key-image">
+            </li>
+        </ol>
 
-                <img src="../public/images/ts.png" alt="Terminal Slot" class="key-image">
+        <div class="content-header">
+            <h2>How to Use The Payment Link</h2>
+        </div>
+
+        <ol>
+            <li>
+                <p>The payment link will lead to a page that allows customer to manually enter the amount they want to pay to the merchant (note, it cannot be less than $1.00).</p>
+                <img src="../public/images/payment/upl1.png" alt="Enter Amount" class="key-image">
             </li>
             <li>
-                <p>Make sure to assign your phone number to the newly created terminal.</p>
-                <img src="../public/images/apn.png" alt="Assign Phone Number" class="key-image">
-            </li>
-            <li>
-                <p>Then, navigate to the <strong>Manage Keys</strong> page. Your API salt & API key will be shown here once created.</p>
-                <img src="../public/images/mkp.png" alt="Manage Keys Page" class="key-image">
-            </li>
-            <li>
-                <p>Click on <strong>Generate New Keys.</strong></p>
-                <img src="../public/images/gnk.png" alt="Generate New Keys" class="key-image">
-            </li>
-            <li>
-                <p>Select the terminal you created and then click on <strong>Generate.</strong></p>
-                <img src="../public/images/stag.png" alt="Select Terminal and Generate" class="key-image">
-            </li>
-            <li>
-                <p>You have successfully created your API salt & key pair! (If you encounter any error during this process please contact us at <italic>+673 8888222</italic> or through our email <italic>support@threegmedia.com</italic>)</p>
-                <img src="../public/images/kgs.png" alt="Keys Generated Successfully" class="key-image">
+                <p>When customer click proceed to payment page, they will be redirected to the Pocket Pay gateway.</p>
+                <img src="../public/images/payment/upl2.png" alt="Payment Page" class="key-image">
+                <img src="../public/images/payment/upl3.png" alt="Pocket Pay Gateway" class="key-image">
             </li>
         </ol>
 
