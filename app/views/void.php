@@ -33,7 +33,9 @@
         <p>Void pin successfully created would show on the void tab</p>
       </div>
 
-      <p>Void button will only appear for current transactions on same day. For transactions that has passed one day, voiding are not possible</p>
+      <p>Void button will only appear for current transactions on same day.
+For transactions that has passed one day,
+voiding are not possible</p>
 
       <div class="voidz-step">
         <h2>Step 5</h2>
