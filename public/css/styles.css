@@ -1179,31 +1179,44 @@
 
 /* start of keys.php */
 
-.key-content {
+.poc-content {
   flex: 1;
   padding: 20px 40px;
   overflow-y: auto;
   background: transparent;
 }
 
-.key-content h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 0;
+.poc-content-header h2 {
+  /* background: linear-gradient(to right, #FF4800, #FF7F00, #F4F6FC); */
+  background: linear-gradient(to right, 
+  rgba(255, 72, 0, 0.65), 
+  rgba(255, 127, 0, 0.65), 
+  rgba(244, 246, 252, 0.65));
+  padding: 15px 32px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  width: 80%; /* Adjusted to match screenshot */
+  max-width: 800px; /* Optional limit to avoid overflow on large screens */
+  margin:20px 0;
 }
 
-.key-content hr {
+.poc-content hr {
   border: none;
   border-top: 2px solid #f47b4c;
   margin-bottom: 20px;
 }
 
-.key-content ol {
+.poc-content ol {
   padding-left: 24px;
   counter-reset: step-counter;
 }
 
-.key-content ol li {
+.poc-content ol li {
   position: relative;
   margin-bottom: 40px;
   padding: 0; /* removed padding */
@@ -1213,29 +1226,23 @@
   line-height: 1.6;
 }
 
-.key-content ol li p {
+.poc-content ol li p {
   margin-bottom: 12px;
 }
 
-.key-content ul {
+.poc-content ul {
   list-style: disc;
   margin-left: 20px;
   color: #444;
 }
 
-.key-image {
+.poc-image {
   width: 60%;
   height: auto;
   border-radius: 8px;
 }
 
-
-.key-image {
-  width: 60%;
-  height: auto;
-}
-
-/* end of keys.php */
+/* end of keys, payment, coupon */
 
 /* start of void */
 
