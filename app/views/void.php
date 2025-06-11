@@ -4,8 +4,9 @@
 
     <main class="doc-content">
 
-    <div class="voidz-wrapper">
-      <h1>HOW TO VOID TRANSACTIONS?</h1>
+        <div class="content-header">
+            <h2>How to Void Transactions?</h2>
+        </div>
       <p>Void could be done by Business Managers or Company profiles in the void tab under “Statement”. They could create void pin on the web portal and would later be used in the Pocket Merchant app to void.</p>
 
       <div class="voidz-step">

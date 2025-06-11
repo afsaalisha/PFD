@@ -1238,8 +1238,74 @@
 /* end of keys.php */
 
 /* start of void */
+.voidz-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 2rem 2rem 2rem 1.5rem;
+  background: #f9f9f9;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.voidz-wrapper > p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  color: #333;
+  max-width: 750px;
+}
+
+.voidz-step {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  max-width: 750px;
+}
+
+.voidz-step p {
+  font-size: 1rem;
+  color: #6a4a3c; /* a softer dark orange-brown */
+  margin-top: 0.75rem;
+  line-height: 1.6;
+  font-weight: 400;
+
+}
+
+.voidz-step img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  display: block;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+/* Custom Scrollbar (Webkit) */
+.voidz-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.voidz-wrapper::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+.voidz-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ff6600;
+  border-radius: 4px;
+}
 
 
 /* end of void */
 
+/* start of refund */
+
+  .refund-image img {
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+/* end of refund */
