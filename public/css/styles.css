@@ -1240,6 +1240,7 @@
   width: 60%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(148, 59, 0, 0.13);
 }
 
 /* end of keys, payment, coupon */
