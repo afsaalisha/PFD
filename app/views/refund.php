@@ -3,6 +3,11 @@
     <?php include 'layouts/merchant-sidebar.php'; ?>
 
     <main class="doc-content">
+
+         <div class="content-header">
+            <h2>How to Refund</h2>
+        </div>
+        
         <?php
         $imageDir = '/PFD/public/images/refund/';
         $imageOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 10, 11, 12, 13, 14, 15];
