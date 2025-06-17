@@ -1189,9 +1189,9 @@
 .poc-content-header h2 {
   /* background: linear-gradient(to right, #FF4800, #FF7F00, #F4F6FC); */
   background: linear-gradient(to right, 
-  rgba(255, 72, 0, 0.65), 
-  rgba(255, 127, 0, 0.65), 
-  rgba(244, 246, 252, 0.65));
+  rgba(255, 72, 0, 0.8), 
+  rgba(255, 127, 0, 0.8), 
+  rgba(244, 246, 252, 0.8));
   padding: 15px 32px;
   font-size: 28px;
   font-weight: 600;
