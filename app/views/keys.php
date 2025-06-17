@@ -77,7 +77,7 @@
             </div>
             <div class="poc-step-box">
                 <div class="step-number">7</div>
-                <p>Select the terminal you created and then click on <strong>Generate.</strong></p>>
+                <p>Select the terminal you created and then click on <strong>Generate.</strong></p>
                 <img src="../public/images/keys/stag.png" alt="Select Terminal and Generate" class="poc-image-small" onclick="openModal(this.src)">
             </div>
             <div class="poc-step-box">
