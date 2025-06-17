@@ -170,6 +170,24 @@
             document.body.removeChild(tempElement);
         });
     });
+
+    // Pocket Merchant Section
+
+    function openModal(src) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        modal.classList.add('show');
+        modalImg.src = src;
+    }
+
+    function closeModal(event) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        if (event.target === modal || event.target.classList.contains('image-modal-close')) {
+            modal.classList.remove('show');
+            modalImg.src = '';
+        }
+    }
 </script>
 
 
