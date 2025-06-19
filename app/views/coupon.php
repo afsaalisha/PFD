@@ -81,12 +81,12 @@
                         <p>CSV file upload</p>
                     </li>
                 </ul>
-                <p><em>Only tick checkbox to allow reusable coupons. otherwise, leave it unticked.</em></p>
-                <p><em>Only Pocket users can receive & use Pocket coupons.</em></p>
+                <p><em>*Only tick checkbox to allow reusable coupons. otherwise, leave it unticked.</em></p>
+                <p><em>*Only Pocket users can receive & use Pocket coupons.</em></p>
                 <ul>
                     <li>Better if merchants encourage customers to use Pocket for coupons.</li>
                 </ul>
-                <p><em>Once all coupons (qty) are dispensed & fully redeemed, coupon will be moved to the "Archive" tab.</em></p>
+                <p><em>*Once all coupons (qty) are dispensed & fully redeemed, coupon will be moved to the "Archive" tab.</em></p>
                 <ul>
                     <li>If qty is unlimited, then it will be moved to the "Archive" tab once it reaches the 'end dispensing date'.</li>
                 </ul>
