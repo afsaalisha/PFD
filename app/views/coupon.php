@@ -57,6 +57,42 @@
             </li>
         </ul>
 
+        <div class="poc-content-header">
+            <h2>Dispense Coupon</h2>
+        </div>
+
+        <ul>
+            <li>
+                <p>Starting coupon quantitiy</p>
+            </li>
+            <li>
+                <p>Amount of coupon dispensed</p>
+            </li>
+            <li>
+                <p>Amount of available coupon left</p>
+            </li>
+            <li>
+                <p>Coupon dispenser could be done by entering</p>
+                <ul>
+                    <li>
+                        <p>User phone number manually or;</p>
+                    </li>
+                    <li>
+                        <p>CSV file upload</p>
+                    </li>
+                </ul>
+                <p><em>Only tick checkbox to allow reusable coupons. otherwise, leave it unticked.</em></p>
+                <p><em>Only Pocket users can receive & use Pocket coupons.</em></p>
+                <ul>
+                    <li>Better if merchants encourage customers to use Pocket for coupons.</li>
+                </ul>
+                <p><em>Once all coupons (qty) are dispensed & fully redeemed, coupon will be moved to the "Archive" tab.</em></p>
+                <ul>
+                    <li>If qty is unlimited, then it will be moved to the "Archive" tab once it reaches the 'end dispensing date'.</li>
+                </ul>
+            </li>
+        </ul>
+
     </main>
 
     <?php include 'layouts/footer.php'; ?>
