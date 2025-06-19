@@ -46,3 +46,11 @@ if (!isset($hasSidebar)) {
 </body>
 
 </html>
+
+<script>
+  document.querySelectorAll('img').forEach(img => {
+  const src = img.getAttribute('src');
+  img.setAttribute('src', src); // forces reload
+});
+
+</script>
