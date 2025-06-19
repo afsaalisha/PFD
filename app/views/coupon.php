@@ -28,7 +28,7 @@
                         <p><strong>Registered merchants</strong> will <strong><em>not be given a refund</em></strong> as there is <em>no upfront payment to be made.</em></p>
                     </li>
                 </ul>
-                <img src="public/images/coupon/ccpn.png" alt="Cancelling Coupon" class="poc-image" style="width: 40%;">
+                <img src="PFD/public/images/coupon/ccpn.png" alt="Cancelling Coupon" class="poc-image" style="width: 40%;">
 
             </li>
         </ul>
