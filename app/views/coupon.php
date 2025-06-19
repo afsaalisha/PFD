@@ -55,13 +55,7 @@
                 </ul>
                 <!-- <img src="public/images/payment/upl1.png" alt="Enter Amount" class="poc-image"> -->
             </li>
-        </ul>
 
-        <div class="poc-content-header">
-            <h2>Dispense Coupon</h2>
-        </div>
-
-        <ul>
             <li>
                 <p>Starting coupon quantitiy</p>
             </li>
